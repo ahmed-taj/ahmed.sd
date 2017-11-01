@@ -35,6 +35,9 @@ li a {
 	color: #02b875 !important;
 	text-decoration: none;
 }
+li a:hover {
+	font-weight: 400 !important;
+}
 
 li:not(:first-child) {
 	padding-left: 1em;

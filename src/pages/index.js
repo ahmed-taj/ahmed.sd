@@ -20,6 +20,9 @@ export default () => (
 			<p>OSS Enthusiast Software Engineer</p>
 			<ul>
 				<li>
+					<a href="mailto:ah.tajelsir@gmail.com"> Email</a>
+				</li>
+				<li>
 					<a href="https://github.com/ahmed-taj"> GitHub</a>
 				</li>
 				<li>
