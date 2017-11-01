@@ -30,15 +30,12 @@ ul {
 	list-style: none;
 }
 
-li {
+li a {
 	font-size: 1em;
+	color: #02b875 !important;
+	text-decoration: none;
 }
 
 li:not(:first-child) {
 	padding-left: 1em;
-}
-
-a {
-	color: #02b875 !important;
-	text-decoration: none;
 }

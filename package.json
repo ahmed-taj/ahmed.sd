@@ -1,15 +1,15 @@
 {
-  "name": "website",
-  "version": "0.0.0-PLACEHOLDER",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
-  "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
-  },
-  "dependencies": {
-    "gatsby": "^1.9.73",
-    "gatsby-link": "^1.6.22"
-  }
+	"name": "website",
+	"version": "0.0.0-PLACEHOLDER",
+	"description": "My personal website",
+	"license": "MIT",
+	"scripts": {
+		"develop": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve"
+	},
+	"dependencies": {
+		"gatsby": "^1.9.73",
+		"gatsby-link": "^1.6.22"
+	}
 }
