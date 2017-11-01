@@ -40,4 +40,5 @@ li:not(:first-child) {
 
 a {
 	color: #02b875 !important;
+	text-decoration: none;
 }
