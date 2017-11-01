@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	text-align: center;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	font-size: 1.2em;
+	align-items: center;
+	font-family: system-ui, sans-serif;
+	flex-direction: column;
+	justify-content: center;
+}
+
+img {
+	border-radius: 50%;
+	border: 2px solid #02b875;
+	padding: 2px;
+}
+
+p {
+	padding: 20px 0px;
+}
+
+ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+li {
+	font-size: 1em;
+}
+
+li:not(:first-child) {
+	padding-left: 1em;
+}
+
+a {
+	color: #02b875 !important;
+}
