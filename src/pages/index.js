@@ -6,9 +6,6 @@ import './index.css'
 
 export default () => (
 	<div>
-		<head>
-			<title>Ahmed T. Ali</title>
-		</head>
 		<section>
 			<img
 				src="https://avatars0.githubusercontent.com/u/12673605"
