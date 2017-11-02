@@ -24,10 +24,15 @@ section {
 	align-items: center;
 	justify-content: center;
 }
+
 img {
 	border-radius: 50%;
 	border: 2px solid #02b875;
 	padding: 2px;
+}
+
+h1 {
+	padding-top: 10px;
 }
 
 p {
@@ -40,7 +45,7 @@ ul {
 }
 
 li a {
-	font-size: 1em;
+	font-size: 0.9em;
 	color: #02b875 !important;
 	text-decoration: none;
 }
