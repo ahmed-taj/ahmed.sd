@@ -38,7 +38,7 @@ module.exports = class HTML extends React.Component {
 						property="og:image"
 						content="https://avatars0.githubusercontent.com/u/12673605"
 					/>
-					<meta property="og:url" content="http://ahmed.sd" />
+					<meta property="og:url" content="https://ahmed.sd" />
 					<meta name="twitter:card" content="summary" />
 					<title>Ahmed T. Ali</title>
 

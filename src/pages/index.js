@@ -5,7 +5,7 @@ import React from 'react'
 import './index.css'
 
 export default () => (
-	<div>
+	<div className="container">
 		<section>
 			<img
 				src="https://avatars0.githubusercontent.com/u/12673605"
@@ -30,5 +30,8 @@ export default () => (
 				</li>
 			</ul>
 		</section>
+		<footer>
+			<p>Copyright ©️ Ahmed T. Ali</p>
+		</footer>
 	</div>
 )

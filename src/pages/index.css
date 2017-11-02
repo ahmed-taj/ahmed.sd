@@ -2,19 +2,28 @@
 	margin: 0;
 	padding: 0;
 	font-weight: 300;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
 	text-align: center;
 }
 
-body {
+.container {
+	font-size: 1.2em;
 	height: 100vh;
 	display: flex;
-	font-size: 1.2em;
 	align-items: center;
-	font-family: system-ui, sans-serif;
 	flex-direction: column;
 	justify-content: center;
 }
 
+section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 img {
 	border-radius: 50%;
 	border: 2px solid #02b875;
@@ -41,4 +50,9 @@ li a:hover {
 
 li:not(:first-child) {
 	padding-left: 1em;
+}
+
+footer p {
+	padding: 10px 0px;
+	font-size: 0.8em;
 }
