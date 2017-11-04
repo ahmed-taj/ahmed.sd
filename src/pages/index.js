@@ -15,7 +15,7 @@ export default () => (
 			/>
 			<h1>Ahmed T. Ali</h1>
 			<p>
-				OSS Enthusiast Full Stack Software Engineer. In ❤ with
+				OSS Enthusiast Full Stack Software Engineer. In <span>❤</span> with
 				Node.js/JavaScript!
 			</p>
 			<ul>
