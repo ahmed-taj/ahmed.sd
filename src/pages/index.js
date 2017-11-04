@@ -14,7 +14,10 @@ export default () => (
 				alt="A photo of me"
 			/>
 			<h1>Ahmed T. Ali</h1>
-			<p>OSS Enthusiast Software Engineer</p>
+			<p>
+				OSS Enthusiast Full Stack Software Engineer. In ❤ with
+				Node.js/JavaScript!
+			</p>
 			<ul>
 				<li>
 					<a href="mailto:ah.tajelsir@gmail.com"> Email</a>
