@@ -20,7 +20,7 @@ export default () => (
 			</p>
 			<ul>
 				<li>
-					<a href="mailto:ah.tajelsir@gmail.com"> Email</a>
+					<a href="mailto:ah.tajelsir@gmail.com"> Contact</a>
 				</li>
 				<li>
 					<a href="https://github.com/ahmed-taj"> GitHub</a>
