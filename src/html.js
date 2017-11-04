@@ -1,5 +1,7 @@
 import React from 'react'
 
+const imageURL = 'https://avatars0.githubusercontent.com/u/12673605'
+
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
 	try {
@@ -34,12 +36,10 @@ module.exports = class HTML extends React.Component {
 						property="og:description"
 						content="OSS Enthusiast Software Engineer."
 					/>
-					<meta
-						property="og:image"
-						content="https://avatars0.githubusercontent.com/u/12673605"
-					/>
+					<meta property="og:image" content={imageURL} />
 					<meta property="og:url" content="https://ahmed.sd" />
 					<meta name="twitter:card" content="summary" />
+					<link rel="shortcut icon" href={imageURL} type="image/png" />
 					<title>Ahmed T. Ali</title>
 
 					{this.props.headComponents}
