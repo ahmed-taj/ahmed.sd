@@ -23,13 +23,13 @@ export default () => (
 					<a href="mailto:ah.tajelsir@gmail.com"> Contact</a>
 				</li>
 				<li>
-					<a href="https://github.com/ahmed-taj"> GitHub</a>
+					<a href="https://medium.com/ahmed-t-ali"> Blog</a>
 				</li>
 				<li>
 					<a href="https://twitter.com/ah_tajelsir"> Twitter</a>
 				</li>
 				<li>
-					<a href="https://medium.com/ahmed-t-ali"> Blog</a>
+					<a href="https://github.com/ahmed-taj"> GitHub</a>
 				</li>
 			</ul>
 		</section>
