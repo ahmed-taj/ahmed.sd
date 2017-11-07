@@ -32,9 +32,10 @@ module.exports = class HTML extends React.Component {
 						content="width=device-width, initial-scale=1, shrink-to-fit=no"
 					/>
 					<meta property="og:title" content="Ahmed T. Ali" />
+					<meta property="description" content="Full Stack Software Engineer" />
 					<meta
 						property="og:description"
-						content="OSS Enthusiast Software Engineer."
+						content="Full Stack Software Engineer"
 					/>
 					<meta property="og:image" content={imageURL} />
 					<meta property="og:url" content="https://ahmed.sd" />
