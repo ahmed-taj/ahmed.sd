@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/zoal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ahmed.sd
+  * I am zoal (https://keybase.io/zoal) on keybase.
+  * I have a public key with fingerprint 1E3D BFAC B8E4 527D 952C  DEE3 671D 5C06 433D 8744
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b0b276a7757fe5d44c4f3736fa38cec330ba3b6ad29c475dd3bd7b992359b9d20a",
+      "fingerprint": "1e3dbfacb8e4527d952cdee3671d5c06433d8744",
+      "host": "keybase.io",
+      "key_id": "671d5c06433d8744",
+      "kid": "0101b0b276a7757fe5d44c4f3736fa38cec330ba3b6ad29c475dd3bd7b992359b9d20a",
+      "uid": "f7a490f64516c2f2f1f39619acb8be19",
+      "username": "zoal"
+    },
+    "service": {
+      "hostname": "ahmed.sd",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1530352881,
+  "expire_in": 157680000,
+  "prev": "2a94917ae0bf00f362b47cd37c84eb3641c1b36103005288c472869ef40209b5",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMIhAnicrVJbSBVBGF5L84LSFbMMiX0Jwmx2Z3b37JFuWERZQaJRWRxndmY9m3r2
+eHaPt9RSulIkdKEe09CEMtAwfQqzwMASrNAokNLAh3xIK0QMalbsrcfm5We++b5v
+vv/nf5GyVEiKiU0/NtfZsrI2ZvBZU1Qo1PKnT4vEptWi/7RYwhYKK6XMcQMlFhX9
+IpCARACRNRVrmqKZTKEIGciEGlRNDH0GMyAEBEOiYirrBtIUSiGhGtF1GSo60akM
+sJgpmlaomEXCESvkcluJQUpMbBAfQ4qsUV2RDcoYVDWJKgZQEYTUpyHEhUHb8RQ8
+HMEOy7JsjvFLYCHeP/j/OXd0wc7UMNKBqSJFUg3ZlE3JhLoq6V4HhEm6R3RYJITL
+GGfX2LhUrMsUOVJhGcwbqtfF4isOljGa5VCuCUds1zbsUo4GXTfs+D2VWx32aJWM
+BBYNAsQKUT4/rqhgEceyQ6Jf4kzDtTxHSYEAKrLPJ2WKrCpsRVjA8hiKpvoAP94/
+rIJbylhHuqRhBogJgAlVmSDNoFAzfIgRqCLJkHiRAATA8+NTkX2qzkwEZKATRfRa
+Kg/Zol/lMXExt3Ss4hB2oxEm1vX3nYgVYpKEZXFLvL0SkhJX/N22668ShFstNVPV
+2YIl/BroGVk5vzp/f+rBgmvhnh1fh69uhtUpY3sfF33JGZ2x1VUZr+eyD+HtCQ1X
+HpbP9/1oGHoQjM8fuphgvpt9fml846GR4Nuj7Z9vzrjvaionJi/n/rydN/vSMpri
+JgJnG+qFqeYLe+40JA/Gt/avjXbsy9uyq618zcnpri0bdndkHd/WvCfWWXpxqGh9
+c2rxZM7hyJUlsyNTYxnrUs48woVKWsHT3A870Pfaj+HG0a6280/GnU/n0w8Ptw23
+J9a939t54MjBG43JbfVVm+43dXfDN70tA7d+bw2E2bnWwuTexsSJ+rrlO1PzGqP3
+5jpS0k7dNdGlb/lmTmfuH7g7Opc=
+=wLJf
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zoal
+
+==================================================================
