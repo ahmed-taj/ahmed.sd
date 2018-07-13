@@ -26,7 +26,7 @@ export default () => (
 					<a href="https://medium.com/ahmed-t-ali"> Blog</a>
 				</li>
 				<li>
-					<a href="https://twitter.com/ah_tajelsir"> Twitter</a>
+					<a href="https://twitter.com/_z0al"> Twitter</a>
 				</li>
 				<li>
 					<a href="https://github.com/z0al"> GitHub</a>
