@@ -1,0 +1,4 @@
+baseURL = "http://ahmed.sd/"
+languageCode = "en-us"
+title = "Ahmed T. Ali -- Open source enthusiast developer"
+theme = "custom"
