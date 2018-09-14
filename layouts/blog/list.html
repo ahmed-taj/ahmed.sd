@@ -5,7 +5,12 @@
 <body>
 	{{- partial "header.html" . -}}
 	<div id="content">
-		{{.Content}}
+		<h2>My Blog list</h2>
+		<ul>
+			{{range .Pages}}
+			<li><a href="{{ .URL}}">{{ .Title}}</a></li>
+			{{end}}
+		</ul>
 	</div>
 	{{- partial "footer.html" . -}}
 </body>
