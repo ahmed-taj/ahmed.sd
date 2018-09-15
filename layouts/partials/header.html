@@ -1,7 +1,15 @@
-<ul>
-	<li>
-		<a href="/">Home</a>
-		<a href="/blog">Blog</a>
-		<a href="/about">About</a>
-	</li>
-</ul>
+<header>
+	<div class="logo">
+		<a href="/">Logo</a>
+	</div>
+
+	<ul class="menu">
+		{{- $currentPage := . -}}
+		{{- range .Site.Menus.main -}}
+		<li class="menu-link  {{ if hasPrefix $currentPage.RelPermalink .URL}}active{{ end }}">
+			<a href="{{- .URL -}}">{{- .Name -}}</a>
+		</li>
+		{{- end -}}
+	</ul>
+
+</header>

@@ -1,3 +1,15 @@
 baseURL = "http://ahmed.sd/"
 languageCode = "en-us"
 title = "Ahmed T. Ali"
+
+[menu]
+
+	[[menu.main]]
+	name = "Blog"
+	url = "/blog/"
+	weight = 1
+
+	[[menu.main]]
+	name = "About"
+	url = "/about/"
+	weight = 2
