@@ -1,0 +1,25 @@
+title: Ahmed T. Ali
+baseURL: http://ahmed.sd/
+copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
+languageCode: en
+
+menu:
+  main:
+    - name: Blog
+      url: /blog/
+      weight: 1
+
+    - name: About
+      url: /about/
+      weight: 2
+
+params:
+  links:
+    - name: GitHub
+      url: https://github.com/z0al
+    - name: Twitter
+      url: https://twitter.com/_z0al
+    - name: PGP
+      url: /pgp.txt
+    - name: Email
+      url: 'mailto:ah.tajelsir@gmail.com'

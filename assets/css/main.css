@@ -43,8 +43,7 @@ header {
 }
 
 header > .logo {
-	display: flex;
-	align-items: center;
+	display: block;
 }
 
 header > .menu {
@@ -69,11 +68,69 @@ header > .menu > .menu-link.active > a {
 
 #content {
 	flex-grow: 1;
+	padding: 50px 0;
+	font-size: 16px;
+}
+
+#content.centered {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#content .profile-links {
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: center;
+	padding: 0;
+}
+
+#content .profile-links > li > a {
+	display: block;
+	padding: 10px;
+	margin: 0 5px;
+	text-transform: uppercase;
+}
+
+#content .profile-links > li > a:hover {
+	background: #79ffe1;
+	color: black;
+}
+
+#content .articles-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+#content .articles-list .article {
+	padding-bottom: 50px;
+}
+
+#content .articles-list .article > h2,
+#content .articles-list .article > div,
+#content .articles-list .article > a {
+	padding: 5px;
+}
+
+#content .articles-list .article a.title-link:hover {
+	background: #79ffe1;
+}
+
+#content .articles-list .article > .summary > p {
+	justify-content: space-between;
+}
+
+#content .articles-list .article > a.read-more-link {
+	text-decoration-line: underline;
+	text-transform: uppercase;
 }
 
 footer {
 	display: flex;
 	justify-content: center;
 	padding: 15px 0;
-	padding-bottom: 2rem;
+	padding-bottom: 50px;
 }

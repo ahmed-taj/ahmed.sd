@@ -5,10 +5,16 @@
 <body>
 	{{- partial "header.html" . -}}
 	<div id="content">
-		<h2>My Blog list</h2>
-		<ul>
+		<h1>Articles</h1>
+		<ul class="articles-list">
 			{{range .Pages}}
-			<li><a href="{{ .URL}}">{{ .Title}}</a></li>
+			<li class="article">
+				<h2>
+					<a class="title-link" href="{{ .URL}}">{{ .Title}}</a>
+				</h2>
+				<div class="summary">{{- truncate 300 .Content | markdownify -}}</div>
+				<a class="read-more-link" href="{{ .URL}}">Read More</a>
+			</li>
 			{{end}}
 		</ul>
 	</div>

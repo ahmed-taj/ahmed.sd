@@ -5,9 +5,12 @@
 <body>
 	{{- partial "header.html" . -}}
 	<div id="content" class="centered">
-		<div>
-			<h2>404 - Not found</h2>
-		</div>
+		<h1>{{- .Site.Title -}}</h1>
+		<ul class="profile-links">
+			{{- range .Site.Params.links -}}
+			<li><a href="{{- .url -}}">{{- .name -}}</a></li>
+			{{- end -}}
+		</ul>
 	</div>
 	{{- partial "footer.html" . -}}
 </body>
