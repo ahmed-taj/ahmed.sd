@@ -1,3 +1,23 @@
 <head>
-	<title>AHMED</title>
+	{{- $title := printf "%s | %s" .Site.Title .Title -}}
+	{{- if eq .URL "/" -}}
+	{{- $title = .Site.Title -}}
+	{{- end -}}
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> {{- $title -}} </title>
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{- $title -}}">
+	<meta property="og:url" content="{{- .Permalink -}}" />
+
+	<!-- Normalize.css -->
+	{{- $normalize := resources.Get "css/normalize.css" | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{- $normalize.Permalink -}}" integrity="{{- $normalize.Data.Integrity -}}">
+
+	<!-- Our CSS -->
+	{{- $mainCSS := resources.Get "css/main.css" | postCSS | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{- $mainCSS.Permalink -}}" integrity="{{- $mainCSS.Data.Integrity -}}">
 </head>

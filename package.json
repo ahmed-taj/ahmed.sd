@@ -1,0 +1,9 @@
+{
+	"name": "website",
+	"version": "1.0.0",
+	"license": "MIT",
+	"devDependencies": {
+		"autoprefixer": "^9.1.5",
+		"postcss-cli": "^6.0.0"
+	}
+}
