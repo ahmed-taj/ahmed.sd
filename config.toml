@@ -1,6 +1,7 @@
 baseURL = "http://ahmed.sd/"
 languageCode = "en-us"
 title = "Ahmed T. Ali"
+copyright = "Copyright © {year} Ahmed T. Ali. All rights reserved."
 
 [menu]
 
