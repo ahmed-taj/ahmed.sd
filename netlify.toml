@@ -1,0 +1,15 @@
+[build]
+publish = "public"
+command = "hugo"
+
+[context.production.environment]
+HUGO_VERSION = "0.48"
+HUGO_ENV = "production"
+
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
+[[redirects]]
+  from = "https://z0al.netlify.com/*"
+  to = "https://ahmed.sd/:splat"
+  status = 301

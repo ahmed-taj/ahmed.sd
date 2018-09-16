@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://z0al.netlify.com/* https://ahmed.sd/:splat 301!
