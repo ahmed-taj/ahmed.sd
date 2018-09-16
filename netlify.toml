@@ -8,6 +8,7 @@ HUGO_ENV = "production"
 
 [context.branch-deploy]
 command = "hugo -b $DEPLOY_PRIME_URL"
+HUGO_VERSION = "0.48"
 
 [[redirects]]
   from = "https://z0al.netlify.com/*"
