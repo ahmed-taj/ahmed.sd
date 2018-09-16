@@ -69,7 +69,7 @@ header > .menu > .menu-link > a {
 header > .menu > .menu-link > a:hover,
 header > .menu > .menu-link > a:active,
 header > .menu > .menu-link.active > a {
-	color: #f81ce5;
+	color: magenta;
 }
 
 footer {
@@ -151,11 +151,41 @@ footer {
 
 #content ul.tags__list > .tag__item > a {
 	padding: 5px 0;
-	color: #f81ce5;
+	color: magenta;
 	margin-right: 15px;
 	text-transform: uppercase;
 }
 
 #content ul.tags__list > .tag__item > a:hover {
 	text-decoration-line: underline;
+}
+
+/* Single article */
+
+#content > .article .header {
+	padding-bottom: 50px;
+}
+
+#content > .article .header .title {
+	text-align: center;
+}
+
+#content > .article .header .date {
+	display: flex;
+	justify-content: center;
+	color: gray;
+}
+
+#content > .article > .content {
+	display: flex;
+	flex-direction: column;
+}
+
+#content > .article > .content a {
+	color: black;
+	border-bottom: 2px solid #79ffe1;
+}
+
+#content > .article > .content a:active {
+	background: #79ffe1;
 }

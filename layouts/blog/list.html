@@ -13,17 +13,7 @@
 				<h2>
 					<a class="title" title="View article" href="{{ .URL}}">{{- .Title -}}</a>
 				</h2>
-				<ul class="tags__list">
-					{{- range .Params.tags -}}
-					{{- $name := . -}}
-					{{- $url := printf "/blog/tags/%s" $name -}}
-					<li class="tag__item">
-						<a href="{{ $url }}" title="Filter articles by the this tag">
-							{{- $name -}}
-						</a>
-					</li>
-					{{- end -}}
-				</ul>
+				{{- partial "tags.html" . -}}
 			</li>
 			{{end}}
 		</ul>

@@ -52,7 +52,7 @@ Again, if you are familiar with [npm](http://npmjs.org) packages like [chalk](ht
 
 ## go-gitconfig
 
-Probably is the smallest package of them all, but I find it really useful in git-related projects. It’s helpful when you want to extract some info from the global ~/.gitconfig or the local .git/config files. Here is a portion of the code I used to extract origin URL value to fetch remote issues from GitHub:
+Probably is the smallest package of them all, but I find it really useful in git-related projects. It’s helpful when you want to extract some info from the global `~/.gitconfig` or the local `.git/config` files. Here is a portion of the code I used to extract origin URL value to fetch remote issues from GitHub:
 
 ```go
 import (

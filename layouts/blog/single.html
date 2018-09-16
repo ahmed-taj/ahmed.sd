@@ -6,8 +6,13 @@
 	{{- partial "header.html" . -}}
 	<div id="content">
 		<div class="article">
-			<h1 class="title">{{- .Title -}}</h1>
-			<div class="article-content">
+			<div class="header">
+				<h1 class="title">{{- .Title -}}</h1>
+
+				<span class="date">{{- .Date.Format "Jan 02, 2006" -}}</span>
+			</div>
+
+			<div class="content">
 				{{- .Content -}}
 			</div>
 		</div>
