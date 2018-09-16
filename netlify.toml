@@ -7,7 +7,7 @@ HUGO_VERSION = "0.48"
 HUGO_ENV = "production"
 
 [context.branch-deploy]
-command = "hugo -b $DEPLOY_PRIME_URL"
+command = "hugo -b https://dev.ahmed.sd"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.48"
