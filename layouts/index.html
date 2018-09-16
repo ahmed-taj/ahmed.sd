@@ -8,7 +8,7 @@
 		<h1>{{- .Site.Title -}}</h1>
 		<ul class="profile-links">
 			{{- range .Site.Params.links -}}
-			<li><a href="{{- .url -}}">{{- .name -}}</a></li>
+			<li><a rel="me" href="{{- .url -}}">{{- .name -}}</a></li>
 			{{- end -}}
 		</ul>
 	</div>
