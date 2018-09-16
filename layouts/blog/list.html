@@ -6,14 +6,24 @@
 	{{- partial "header.html" . -}}
 	<div id="content">
 		<h1>Articles</h1>
-		<ul class="articles-list">
+		<ul class="articles__list">
 			{{range .Pages}}
 			<li class="article">
+				<span class="date">{{- .Date.Format "Jan 02, 2006" -}}</span>
 				<h2>
-					<a class="title-link" href="{{ .URL}}">{{ .Title}}</a>
+					<a class="title" title="View article" href="{{ .URL}}">{{- .Title -}}</a>
 				</h2>
-				<div class="summary">{{ truncate 180 .Content | markdownify }}</div>
-				<a class="read-more-link" href="{{ .URL}}">Read More</a>
+				<ul class="tags__list">
+					{{- range .Params.tags -}}
+					{{- $name := . -}}
+					{{- $url := printf "/blog/tags/%s" $name -}}
+					<li class="tag__item">
+						<a href="{{ $url }}" title="Filter articles by the this tag">
+							{{- $name -}}
+						</a>
+					</li>
+					{{- end -}}
+				</ul>
 			</li>
 			{{end}}
 		</ul>

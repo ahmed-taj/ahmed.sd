@@ -28,6 +28,12 @@ a {
 	color: black;
 }
 
+h1 {
+	padding: 0 5px;
+}
+
+/* Header & Footer */
+
 header,
 footer,
 #content {
@@ -66,9 +72,16 @@ header > .menu > .menu-link.active > a {
 	color: #f81ce5;
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+	padding-bottom: 50px;
+}
+
 #content {
 	flex-grow: 1;
-	padding: 50px 0;
+	padding: 50px 20px;
 	font-size: 16px;
 }
 
@@ -79,9 +92,11 @@ header > .menu > .menu-link.active > a {
 	text-align: center;
 }
 
+/* Home Page */
+
 #content .profile-links {
 	list-style-type: none;
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	padding: 0;
 }
@@ -98,39 +113,49 @@ header > .menu > .menu-link.active > a {
 	color: black;
 }
 
-#content .articles-list {
+/* Articles list */
+
+#content .articles__list {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
 }
 
-#content .articles-list .article {
-	padding-bottom: 50px;
+#content .articles__list .article {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
 }
 
-#content .articles-list .article > h2,
-#content .articles-list .article > div,
-#content .articles-list .article > a {
+#content .articles__list .article a.title {
 	padding: 5px;
 }
 
-#content .articles-list .article a.title-link:hover {
+#content .articles__list .article a.title:hover {
 	background: #79ffe1;
 }
 
-#content .articles-list .article > .summary > p {
-	justify-content: space-between;
+#content .articles__list .article .date {
+	padding: 0 5px;
+	color: gray;
 }
 
-#content .articles-list .article > a.read-more-link {
-	text-decoration-line: underline;
+/* Tags list */
+
+#content ul.tags__list {
+	list-style-type: none;
+	display: flex;
+	padding: 0 5px;
+}
+
+#content ul.tags__list > .tag__item > a {
+	padding: 5px 0;
+	color: #f81ce5;
+	margin-right: 15px;
 	text-transform: uppercase;
 }
 
-footer {
-	display: flex;
-	justify-content: center;
-	padding: 15px 0;
-	padding-bottom: 50px;
+#content ul.tags__list > .tag__item > a:hover {
+	text-decoration-line: underline;
 }

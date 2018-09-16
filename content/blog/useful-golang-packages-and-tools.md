@@ -1,6 +1,7 @@
 ---
 title: Useful Golang Packages and Tools
 date: 2017-12-13T21:06:11+03:00
+tags: ['go', 'curated-list']
 ---
 
 I recently [built my first](https://dev.to/ahmedtaj/local-to-dos-for-developers-5l2) Go language program ever 🙌. In this post I would like to share some Go packages I found very useful.
