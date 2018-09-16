@@ -7,7 +7,7 @@ A few days ago I started a small, pet project with a goal of automating the way 
 
 In this post, I will try to outline how I manage local To-Dos before and after I built the tool. While my approach isn’t unique and doesn’t fit all projects/developers, it may somehow help or inspire others ;)
 
-### Local To-Dos? Exactly!
+## Local To-Dos? Exactly!
 
 The “To-Do” term may refer to different meaning in different contexts. In this case, I’m referring to small tasks you are expected to finish them within few hours.
 
@@ -21,7 +21,7 @@ I don’t think there is “one-thing-fits-all” solution, so currently, I’m 
 
 The tool I’ve built focuses on automating the last part- the “Local” To-Dos!
 
-### Features set
+## Features set
 
 I called my tool “Git Todos” as it depends on Git being installed to work. However, it’s not a [Git-Flow](http://nvie.com/posts/a-successful-git-branching-model/)-like CLI and doesn’t assume any workflow.
 
@@ -29,7 +29,7 @@ Generally, the tool works by simply maintaining a local .todos.yml file on each 
 
 The tool itself doesn’t (yet) help much regarding the prevention of accidentally pushing the .todos.yml file. But, it’s handy to add a .gitignore entry for now!
 
-#### Managing To-Dos:
+### Managing To-Dos:
 
 Adding To-Dos are simple as you might have imagined. For example, here is how to add a To-Do:
 
@@ -47,7 +47,7 @@ Also, the tool provides other — expected — commands such as show whi
 
 It also worth mentioning that the tool doesn’t (and probably won’t ) support any kind of prioritizing/ coloring/ labeling …etc, it doesn’t help you to organize To-Dos but rather get them done!
 
-#### Marking To-Dos
+### Marking To-Dos
 
 Marking To-Dos makes it even easier to use the tool, for example, if you want to remove a To-Do item, the command will show a selection list like below to let you select which item to delete:
 
@@ -55,7 +55,7 @@ Marking To-Dos makes it even easier to use the tool, for example, if you want to
 
 If you want to remove a marked item you can pass -m to the command to skip selection step. You may only mark single To-Do :)
 
-#### Importing issues
+### Importing issues
 
 This is actually a cool thing!
 
@@ -69,7 +69,7 @@ When you import issues from GitHub the tool will also store the corresponding is
 
 Did we just say “Finish”?
 
-#### Finishing To-Dos
+### Finishing To-Dos
 
 The last part of the puzzle is to actually finish/close an item. For that purpose, the tool provides a finish command.
 
@@ -87,11 +87,11 @@ And here we go, let’s check our history:
 
 ![](https://cdn-images-1.medium.com/max/655/1*xHdnhhQOpDET8RfcUkNnaQ.png)<figcaption>Work history ;)</figcaption>
 
-#### A little encouragement while you work
+### A little encouragement while you work
 
 Finally, In case you didn’t notice, there are some one-line encouragement messages on the last line of some commands output, e.g. “Nice work”, “I see what you did there” ..etc. The feature is inspired by “[encourage](https://github.com/Haacked/encourage-atom)”, the popular Atom editor package.
 
-### Wrap up
+## Wrap up
 
 If you like the tool you can download the binary from the official [GitHub repository](https://github.com/ahmed-taj/git-todos) (you can also use this sweet, short URL [https://git.io/todos](https://git.io/todos))
 

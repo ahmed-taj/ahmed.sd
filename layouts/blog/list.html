@@ -12,7 +12,7 @@
 				<h2>
 					<a class="title-link" href="{{ .URL}}">{{ .Title}}</a>
 				</h2>
-				<div class="summary">{{- truncate 300 .Content | markdownify -}}</div>
+				<div class="summary">{{ truncate 180 .Content | markdownify }}</div>
 				<a class="read-more-link" href="{{ .URL}}">Read More</a>
 			</li>
 			{{end}}
