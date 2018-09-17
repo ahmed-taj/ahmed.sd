@@ -34,7 +34,7 @@ h1 {
 }
 
 pre {
-	overflow: scroll;
+	overflow-x: auto;
 	padding: 5px;
 }
 /* Header & Footer */
