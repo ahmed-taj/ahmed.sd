@@ -36,6 +36,8 @@ h1 {
 pre {
 	overflow-x: auto;
 	padding: 5px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
 }
 /* Header & Footer */
 
