@@ -34,12 +34,13 @@ h1 {
 	padding: 0 5px;
 }
 
-pre {
+pre.chroma {
 	overflow-x: auto;
-	padding: 5px;
+	padding: 1rem;
 	border: 1px solid lightgray;
 	border-radius: 3px;
 }
+
 /* Header & Footer */
 
 header,
@@ -72,6 +73,15 @@ header > .menu {
 header > .menu > .menu-link > a {
 	padding: 0 15px;
 	text-transform: uppercase;
+}
+
+header #toggle {
+	padding: 0 10px;
+	margin: 0 5px;
+	background: white;
+	border: none;
+	outline: none;
+	color: black;
 }
 
 header > .menu > .menu-link > a:hover,
