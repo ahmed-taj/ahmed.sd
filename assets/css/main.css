@@ -83,7 +83,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	padding: 15px 0;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 #content {
@@ -137,7 +137,7 @@ footer {
 
 #content .articles__list .article a.title {
 	padding: 5px;
-	display: block;
+	display: inline-block;
 }
 
 #content .articles__list .article a.title:hover {
