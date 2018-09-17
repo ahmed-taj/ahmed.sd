@@ -12,6 +12,11 @@
 	<!-- Open Graph -->
 	<meta property="og:title" content="{{- $title -}}">
 	<meta property="og:url" content="{{- .Permalink -}}" />
+	<meta property="og:image" content="/loop.svg">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- Normalize.css -->
 	{{- $normalize := resources.Get "css/normalize.css" | minify | fingerprint -}}
