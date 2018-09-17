@@ -82,6 +82,7 @@ header #toggle {
 	border: none;
 	outline: none;
 	color: black;
+	font-size: 1rem;
 }
 
 header > .menu > .menu-link > a:hover,
