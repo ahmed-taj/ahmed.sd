@@ -195,3 +195,10 @@ footer {
 #content > .article > .content a:active {
 	background: #79ffe1;
 }
+
+#content > .article .content p > img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	border-radius: 2px;	
+}
