@@ -83,6 +83,8 @@ header #toggle {
 	outline: none;
 	color: black;
 	font-size: 1rem;
+	user-select: none;
+	cursor: pointer;
 }
 
 header > .menu > .menu-link > a:hover,
