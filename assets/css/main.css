@@ -33,6 +33,10 @@ h1 {
 	padding: 0 5px;
 }
 
+pre {
+	overflow: scroll;
+	padding: 5px;
+}
 /* Header & Footer */
 
 header,
