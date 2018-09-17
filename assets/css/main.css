@@ -45,7 +45,7 @@ footer,
 header {
 	display: flex;
 	height: 50px;
-	padding: 15px 0;
+	padding: 15px 20px;
 }
 
 header > .logo {
@@ -130,6 +130,7 @@ footer {
 
 #content .articles__list .article a.title {
 	padding: 5px;
+	display: block;
 }
 
 #content .articles__list .article a.title:hover {
