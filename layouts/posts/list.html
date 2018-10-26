@@ -5,17 +5,18 @@
 <body class="light">
 	{{- partial "header.html" . -}}
 	<div id="content">
-		<div class="article">
-			<div class="header">
-				<h1 class="title">{{- .Title -}}</h1>
-
+		<h1>Posts</h1>
+		<ul class="posts__list">
+			{{range .Pages}}
+			<li class="post">
 				<span class="date">{{- .Date.Format "Jan 02, 2006" -}}</span>
-			</div>
-
-			<div class="content">
-				{{- .Content -}}
-			</div>
-		</div>
+				<h2>
+					<a class="title" title="View post" href="{{ .URL}}">{{- .Title -}}</a>
+				</h2>
+				{{- partial "tags.html" . -}}
+			</li>
+			{{end}}
+		</ul>
 	</div>
 	{{- partial "footer.html" . -}}
 	{{- partial "scripts.html" . -}}

@@ -134,33 +134,38 @@ footer {
 	color: black;
 }
 
-/* Articles list */
+/* Posts list */
 
-#content .articles__list {
+#content .posts__list {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
 }
 
-#content .articles__list .article {
+#content .posts__list .post {
 	display: flex;
 	flex-direction: column;
 	padding: 30px 0;
 }
 
-#content .articles__list .article a.title {
+#content .posts__list .post h2 {
+	margin-top: 0;
+}
+
+#content .posts__list .post a.title {
 	padding: 5px;
 	display: inline-block;
 }
 
-#content .articles__list .article a.title:hover {
+#content .posts__list .post a.title:hover {
 	background: #79ffe1;
 }
 
-#content .articles__list .article .date {
+#content .posts__list .post .date {
 	padding: 0 5px;
 	color: gray;
+	text-transform: uppercase;
 }
 
 /* Tags list */
@@ -182,37 +187,37 @@ footer {
 	text-decoration-line: underline;
 }
 
-/* Single article */
+/* Single post */
 
-#content > .article .header {
+#content > .post .header {
 	padding-bottom: 50px;
 }
 
-#content > .article .header .title {
+#content > .post .header .title {
 	text-align: center;
 }
 
-#content > .article .header .date {
+#content > .post .header .date {
 	display: flex;
 	justify-content: center;
 	color: gray;
 }
 
-#content > .article > .content {
+#content > .post > .content {
 	display: flex;
 	flex-direction: column;
 }
 
-#content > .article > .content a {
+#content > .post > .content a {
 	color: black;
 	border-bottom: 2px solid #79ffe1;
 }
 
-#content > .article > .content a:active {
+#content > .post > .content a:active {
 	background: #79ffe1;
 }
 
-#content > .article .content p > img {
+#content > .post .content p > img {
 	display: block;
 	margin: auto;
 	max-width: 100%;
