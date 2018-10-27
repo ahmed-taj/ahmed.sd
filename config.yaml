@@ -15,6 +15,9 @@ menu:
       url: /about/
       weight: 2
 
+taxonomies:
+  tag: tags
+
 params:
   links:
     - name: GitHub

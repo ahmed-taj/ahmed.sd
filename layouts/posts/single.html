@@ -6,13 +6,13 @@
 	{{- partial "header.html" . -}}
 	<div id="content">
 		<div class="post">
-			<div class="header">
-				<h1 class="title">{{- .Title -}}</h1>
+			<div class="post__header">
+				<h1 class="post__title">{{- .Title -}}</h1>
 
-				<span class="date">{{- .Date.Format "Jan 02, 2006" -}}</span>
+				<span class="post__date">{{- .Date.Format "Jan 02, 2006" -}}</span>
 			</div>
 
-			<div class="content">
+			<div class="post__content">
 				{{- .Content -}}
 			</div>
 		</div>

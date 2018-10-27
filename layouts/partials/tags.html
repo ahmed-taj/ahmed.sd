@@ -1,9 +1,9 @@
 <ul class="tags__list">
 	{{- range .Params.tags -}}
 	{{- $name := . -}}
-	{{- $url := printf "/blog/tags/%s" $name -}}
+	{{- $url := printf "/tags/%s" $name -}}
 	<li class="tag__item">
-		<a href="{{ $url }}" title="Filter articles by the this tag">
+		<a href="{{ $url }}" title="Posts tagged with '{{ $name }}'">
 			{{- $name -}}
 		</a>
 	</li>

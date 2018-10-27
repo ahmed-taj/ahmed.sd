@@ -80,11 +80,16 @@ header #toggle {
 	margin: 0 5px;
 	background: white;
 	border: none;
-	outline: none;
 	color: black;
 	font-size: 1rem;
 	user-select: none;
 	cursor: pointer;
+}
+
+header #toggle img {
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
 }
 
 header > .menu > .menu-link > a:hover,
@@ -143,26 +148,26 @@ footer {
 	padding: 0;
 }
 
-#content .posts__list .post {
+#content .posts__list .post__item {
 	display: flex;
 	flex-direction: column;
 	padding: 30px 0;
 }
 
-#content .posts__list .post h2 {
+#content .posts__list .post__item h2 {
 	margin-top: 0;
 }
 
-#content .posts__list .post a.title {
+#content .posts__list .post__item a.post__title {
 	padding: 5px;
 	display: inline-block;
 }
 
-#content .posts__list .post a.title:hover {
+#content .posts__list .post__item a.post__title:hover {
 	background: #79ffe1;
 }
 
-#content .posts__list .post .date {
+#content .posts__list .post__item .post__date {
 	padding: 0 5px;
 	color: gray;
 	text-transform: uppercase;
@@ -170,54 +175,72 @@ footer {
 
 /* Tags list */
 
+#content > ul.tags__list {
+	display: flex;
+	flex-direction: column;
+}
+
 #content ul.tags__list {
 	list-style-type: none;
 	display: flex;
 	padding: 0 5px;
 }
 
+#content ul.tags__list > .tag__item {
+	margin-right: 15px;
+}
+
 #content ul.tags__list > .tag__item > a {
 	padding: 5px 0;
 	color: magenta;
-	margin-right: 15px;
-	text-transform: uppercase;
 }
 
 #content ul.tags__list > .tag__item > a:hover {
 	text-decoration-line: underline;
 }
 
+#content ul.tags__list > .tag__item > span.count::before {
+	content: '(';
+}
+
+#content ul.tags__list > .tag__item > span.count::after {
+	content: ')';
+}
+
 /* Single post */
 
-#content > .post .header {
+#content > .post .post__header {
 	padding-bottom: 50px;
 }
 
-#content > .post .header .title {
+#content > .post .post__header .post__title {
 	text-align: center;
 }
 
-#content > .post .header .date {
+#content > .post .post__header .post__date {
 	display: flex;
 	justify-content: center;
 	color: gray;
+	text-transform: uppercase;
 }
 
-#content > .post > .content {
+#content > .post > .post__content {
 	display: flex;
 	flex-direction: column;
 }
 
-#content > .post > .content a {
+#content > .post > .post__content a {
 	color: black;
-	border-bottom: 2px solid #79ffe1;
+	text-decoration: underline;
 }
 
-#content > .post > .content a:active {
+#content > .post > .post__content a:active,
+#content > .post > .post__content a:focus {
 	background: #79ffe1;
+	outline-color: #79ffe1;
 }
 
-#content > .post .content p > img {
+#content > .post .post__content p > img {
 	display: block;
 	margin: auto;
 	max-width: 100%;
