@@ -34,13 +34,6 @@ h1 {
 	padding: 0 5px;
 }
 
-pre.chroma {
-	overflow-x: auto;
-	padding: 1rem;
-	border: 1px solid lightgray;
-	border-radius: 3px;
-}
-
 /* Header & Footer */
 
 header,
@@ -227,6 +220,21 @@ footer {
 #content > .post > .post__content {
 	display: flex;
 	flex-direction: column;
+}
+
+#content > .post > .post__content blockquote {
+	color: gray;
+	border-left: 3px solid gray;
+	font-style: italic;
+	padding-left: 1em;
+}
+
+#content > .post > .post__content pre.chroma {
+	overflow-x: auto;
+	padding: 1rem;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	tab-size: 4;
 }
 
 #content > .post > .post__content a {
