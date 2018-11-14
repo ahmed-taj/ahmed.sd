@@ -148,7 +148,7 @@ footer {
 }
 
 #content .posts__list .post__item h2 {
-	margin-top: 0;
+	margin: 0;
 }
 
 #content .posts__list .post__item a.post__title {
@@ -164,6 +164,7 @@ footer {
 	padding: 0 5px;
 	color: gray;
 	text-transform: uppercase;
+	font-size: 0.8em;
 }
 
 /* Tags list */
