@@ -23,14 +23,11 @@
 	{{- $normalize := resources.Get "css/normalize.css" | minify | fingerprint -}}
 	<link rel="stylesheet" href="{{- $normalize.Permalink -}}" integrity="{{- $normalize.Data.Integrity -}}">
 
-	<!-- Light/Dark themes -->
-	{{- $chroma_light := resources.Get "css/chroma/light.css" | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{- $chroma_light.Permalink -}}" integrity="{{- $chroma_light.Data.Integrity -}}">
-
-	{{- $chroma_dark := resources.Get "css/chroma/dark.css" | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{- $chroma_dark.Permalink -}}" integrity="{{- $chroma_dark.Data.Integrity -}}">
+	<!-- Syntax highlighting -->
+	{{- $syntax := resources.Get "css/syntax.css" | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{- $syntax.Permalink -}}" integrity="{{- $syntax.Data.Integrity -}}">
 
 	<!-- Our CSS -->
-	{{- $mainCSS := resources.Get "css/main.css" | postCSS | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{- $mainCSS.Permalink -}}" integrity="{{- $mainCSS.Data.Integrity -}}">
+	{{- $customCSS := resources.Get "css/custom.css" | postCSS | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{- $customCSS.Permalink -}}" integrity="{{- $customCSS.Data.Integrity -}}">
 </head>
