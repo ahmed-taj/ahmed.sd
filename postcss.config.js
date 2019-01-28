@@ -1,3 +1,7 @@
+// Packages
+const autoprefixer = require('autoprefixer');
+const cssimport = require('postcss-import');
+
 module.exports = {
-	plugins: [require('postcss-import'), require('autoprefixer')]
+	plugins: [cssimport({ path: 'assets/css' }), autoprefixer]
 };

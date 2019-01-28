@@ -4,26 +4,26 @@
 	{{- $title = .Site.Title -}}
 	{{- end -}}
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title> {{- $title -}} </title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>{{- $title -}}</title>
 
 	<!-- Open Graph -->
-	<meta property="og:title" content="{{- $title -}}">
+	<meta property="og:title" content="{{- $title -}}" />
 	<meta property="og:url" content="{{- .Permalink -}}" />
-	<meta property="og:image" content="{{- "/loop.png" | absURL -}}">
-	<meta name="twitter:card" content="summary">
+	<meta property="og:image" content="" />
+	<meta name="twitter:card" content="summary" />
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-	<!-- Syntax highlighting -->
-	{{- $syntax := resources.Get "css/syntax.css" | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{- $syntax.Permalink -}}" integrity="{{- $syntax.Data.Integrity -}}">
-
-	<!-- Our CSS -->
-	{{- $customCSS := resources.Get "css/custom.css" | postCSS | minify | fingerprint -}}
-	<link rel="stylesheet" href="{{- $customCSS.Permalink -}}" integrity="{{- $customCSS.Data.Integrity -}}">
+	<!-- CSS -->
+	{{- $style := resources.Get "css/style.css" | postCSS | minify | fingerprint -}}
+	<link
+		rel="stylesheet"
+		href="{{- $style.Permalink -}}"
+		integrity="{{- $style.Data.Integrity -}}"
+	/>
 </head>

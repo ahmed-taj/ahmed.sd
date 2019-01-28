@@ -1,23 +1,12 @@
-<header>
-	<div class="logo">
-		<a href="/">
-			<img src="/loop.svg" width="24" alt="The loop icon">
-		</a>
-	</div>
+<header class="center">
+	<a class="logo" href="/"> A </a>
 
-	<ul class="menu">
-		{{- $currentPage := . -}}
+	<nav>
 		{{- range .Site.Menus.main -}}
-		<li class="menu-link  {{ if hasPrefix $currentPage.RelPermalink .URL}}active{{ end }}">
-			<a href="{{- .URL -}}">{{- .Name -}}</a>
-		</li>
+		<a href="{{- .URL -}}"> {{- .Name -}} </a>
 		{{- end -}}
-		<li class="menu-link"><span>|</span></li>
-		<li class="menu-link">
-			<button id="toggle" type="button" title="Toggle dark mode">
-				<img src="/images/theme-light.svg" />
-			</button>
-		</li>
-	</ul>
+	</nav>
 
+	<span>│</span>
+	<button>☾</button>
 </header>
