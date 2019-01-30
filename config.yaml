@@ -5,6 +5,26 @@ languageCode: en
 pygmentsCodeFences: true
 pygmentsUseClasses: true
 
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  section:
+    - html
+  taxonomyTerm:
+    - html
+  taxonomy:
+    - html
+
+outputFormats:
+  rss:
+    mediaType: application/rss+xml
+    baseName: feed
+  json:
+    mediaType: application/json
+    baseName: feed
+
 menu:
   main:
     - name: Blog
