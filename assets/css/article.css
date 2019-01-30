@@ -1,4 +1,35 @@
 article {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+article > time {
+	color: var(--support-text);
+	font-size: 14px;
+}
+
+article > a.title {
+	color: var(--text);
+	text-decoration: none;
+	padding: 0.5em 0;
+	font-size: 18px;
+}
+
+article > ul.tags {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+article > ul.tags li {
+	margin-right: 10px;
+}
+
+article > ul.tags li a {
+	display: block;
+	text-decoration: none;
+	color: var(--support-text);
 }

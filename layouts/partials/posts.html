@@ -1,12 +1,16 @@
-<ul class="posts__list">
-	{{ .Scratch.Get "Limit" }}
-	{{range .Pages}}
-	<li class="post__item">
-		<span class="post__date">{{- .Date.Format "Jan 02, 2006" -}}</span>
-		<h2>
-			<a class="post__title" title="View post" href="{{ .URL}}">{{- .Title -}}</a>
-		</h2>
-		{{- partial "tags.html" . -}}
+<ul class="posts">
+	{{ $posts := .Pages }}
+	{{ if .Scratch.Get "Limit" }}
+	{{ $posts = first (.Scratch.Get "Limit") .Pages }}
+	{{ end }}
+
+	{{ range $posts }}
+	<li>
+		<article>
+			<time datetime="{{ .Date }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+			<a class="title" href="{{ .URL }}"> {{ .Title }} </a>
+			{{ partial "tags.html" . }}
+		</article>
 	</li>
-	{{end}}
+	{{ end }}
 </ul>
