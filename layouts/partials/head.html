@@ -20,10 +20,10 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 	<!-- CSS -->
-	{{- $style := resources.Get "css/style.css" | postCSS | minify | fingerprint -}}
+	{{ $style := resources.Get "css/index.css" | postCSS | minify | fingerprint }}
 	<link
 		rel="stylesheet"
 		href="{{- $style.Permalink -}}"
 		integrity="{{- $style.Data.Integrity -}}"
-	/>
+		/>
 </head>

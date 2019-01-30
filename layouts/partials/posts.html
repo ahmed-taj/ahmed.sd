@@ -1,4 +1,5 @@
 <ul class="posts__list">
+	{{ .Scratch.Get "Limit" }}
 	{{range .Pages}}
 	<li class="post__item">
 		<span class="post__date">{{- .Date.Format "Jan 02, 2006" -}}</span>

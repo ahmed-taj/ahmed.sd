@@ -1,0 +1,41 @@
+header {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+header a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: var(--support-text);
+}
+
+header a:active,
+header a:hover,
+header a:focus {
+	color: var(--text);
+}
+
+header nav {
+	display: flex;
+	margin-left: 10px;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+header > span,
+header > button {
+	display: block;
+	padding: 10px;
+	color: var(--support-text);
+}
+
+header > button {
+	background: var(--background);
+	border: none;
+	cursor: pointer;
+}
