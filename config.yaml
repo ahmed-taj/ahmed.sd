@@ -8,10 +8,9 @@ pygmentsUseClasses: true
 outputs:
   home:
     - html
-    - rss
-    - json
   section:
     - html
+    - rss
   taxonomyTerm:
     - html
   taxonomy:
@@ -20,10 +19,7 @@ outputs:
 outputFormats:
   rss:
     mediaType: application/rss+xml
-    baseName: feed
-  json:
-    mediaType: application/json
-    baseName: feed
+    baseName: rss
 
 menu:
   main:

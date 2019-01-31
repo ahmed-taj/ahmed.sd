@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>{{ $title }}</title>
-	<link rel="canonical" href="{{ .Permalink }}">
+	<link rel="canonical" href="{{ .Permalink }}" />
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="{{ $title }}" />
@@ -16,14 +16,12 @@
 	<meta property="og:image" content="" />
 	<meta name="twitter:card" content="summary" />
 
-	<!--- Feeds -->
-	{{ range .AlternativeOutputFormats }}
+	<!--- RSS -->
 	<link
-		rel="{{ .Rel }}"
-		title="{{ .Name }}"
-		type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-	{{ end }}
-
+		ref="alternate"
+		type="application/rss+xml"
+		href="{{ `/posts/rss.xml` | safeURL | absURL }}"
+		/>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
