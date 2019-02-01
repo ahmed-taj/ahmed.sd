@@ -27,24 +27,10 @@ body {
 	min-height: 100%;
 }
 
-section,
-article,
-aside,
-footer,
-header,
-nav {
-	display: block;
-}
-
-header,
-main,
-footer {
-	max-width: var(--max-width);
-}
-
 main {
 	display: flex;
 	flex-direction: column;
+	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: 10px 20px;
 }
