@@ -1,2 +1,0 @@
-{{- $mainJS := resources.Get "js/main.js" | minify | fingerprint -}}
-<script type="text/javascript" src="{{- $mainJS.Permalink -}}" integrity="{{- $mainJS.Data.Integrity -}}"></script>

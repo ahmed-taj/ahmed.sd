@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-{{- partial "head.html" . -}}
+	{{- partial "head.html" . -}}
 
-<body class="light">
-	{{- partial "header.html" . -}}
-	<div id="content">
-		{{ if eq .Kind "taxonomyTerm" }}
-		<h1>Tags</h1>
-		<ul class="tags__list">
-			{{ range $key, $value := .Data.Terms.ByCount }}
-			{{ $name := .Name }}
-			{{ $count := .Count }}
-			{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-			<li class="tag__item">
-				<a href="{{ .Permalink }}" title="Posts tagged with '{{ $name }}'">
-					{{- $name -}}
-				</a>
-				<span class="count">{{ $count }}</span>
-			</li>
-			{{ end }}
-			{{ end }}
-		</ul>
+	<body class="light">
+		{{- partial "header.html" . -}}
+		<div id="content">
+			{{ if eq .Kind "taxonomyTerm" }}
+			<h1>Tags</h1>
+			<ul class="tags__list">
+				{{ range $key, $value := .Data.Terms.ByCount }}
+				{{ $name := .Name }}
+				{{ $count := .Count }}
+				{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+				<li class="tag__item">
+					<a href="{{ .Permalink }}" title="Posts tagged with '{{ $name }}'">
+						{{- $name -}}
+					</a>
+					<span class="count">{{ $count }}</span>
+				</li>
+				{{ end }}
+				{{ end }}
+			</ul>
 
-		{{ else }}
-		<h1>#{{ .Data.Term }}</h1>
-		{{- partial "posts.html" . -}}
-		{{end}}
+			{{ else }}
+			<h1>#{{ .Data.Term }}</h1>
+			{{- partial "posts.html" . -}}
+			{{end}}
 
 
-	</div>
-	{{- partial "footer.html" . -}}
-	{{- partial "scripts.html" . -}}
-</body>
+		</div>
+		{{- partial "footer.html" . -}}
+	</body>
 
 </html>
