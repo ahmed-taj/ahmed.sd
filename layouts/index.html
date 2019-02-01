@@ -6,10 +6,18 @@
 		{{ partial "header.html" . }}
 
 		<main>
-			<div class="profile"></div>
-
-			<h3>Latest</h3>
-			{{ .Scratch.Set "Limit" 3 }} {{ partial "posts.html" . }}
+			<section class="profile">
+				<div class="info">
+					<h1>{{ .Site.Title }}</h1>
+					<p>I build various stuff using code, silly things mostly. In ❤ with
+						Node.js, and Go, but use other tech too. Open source for fun 😍</p>
+				</div>
+				<img src="/images/me.jpg" alt="{{ .Site.Title }}" />
+			</section>
+			<section class="recent">
+				<h3>Latest</h3>
+				{{ .Scratch.Set "Limit" 3 }} {{ partial "posts.html" . }}
+			</section>
 		</main>
 
 		{{ partial "footer.html" . }}

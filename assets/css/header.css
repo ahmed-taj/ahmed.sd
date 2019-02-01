@@ -2,7 +2,8 @@ header {
 	display: flex;
 	flex-direction: row;
 	max-width: var(--max-width);
-	margin: 0 auto;
+	margin: auto;
+	margin-bottom: 50px;
 	padding: 10px;
 	text-transform: uppercase;
 }
@@ -14,18 +15,18 @@ header a {
 	color: var(--support-text);
 }
 
-header a:active,
-header a:hover,
-header a:focus {
-	color: var(--text);
-}
-
 header nav {
 	display: flex;
 	margin-left: 10px;
 	width: 100%;
 	flex-direction: row;
 	justify-content: flex-end;
+}
+
+header nav a:active,
+header nav a:hover,
+header nav a:focus {
+	color: var(--text);
 }
 
 header > span,

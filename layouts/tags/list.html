@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	{{- partial "head.html" . -}}
+	{{ partial "head.html" . }}
 
-	<body class="light">
-		{{- partial "header.html" . -}}
-		<div id="content">
+	<body>
+		{{ partial "header.html" . }}
+
+		<main>
 			{{ if eq .Kind "taxonomyTerm" }}
 			<h1>Tags</h1>
 			<ul class="tags__list">
@@ -26,10 +27,8 @@
 			<h1>#{{ .Data.Term }}</h1>
 			{{- partial "posts.html" . -}}
 			{{end}}
+		</main>
 
-
-		</div>
-		{{- partial "footer.html" . -}}
+		{{ partial "footer.html" . }}
 	</body>
-
 </html>
