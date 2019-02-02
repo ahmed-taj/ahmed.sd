@@ -1,6 +1,5 @@
 <header>
-	<a class="logo" href="/"> A </a>
-
+	<a class="logo" href="/"> {{ partial "logo.html" . }} </a>
 	<nav>
 		{{ $page := . }}
 		{{ range .Site.Menus.main }}

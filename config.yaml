@@ -2,7 +2,6 @@ title: Ahmed T. Ali
 baseURL: https://ahmed.sd/
 copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
 languageCode: en
-canonifyURLs: true
 pygmentsCodeFences: true
 pygmentsUseClasses: true
 

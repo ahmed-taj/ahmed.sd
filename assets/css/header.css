@@ -6,6 +6,7 @@ header {
 	margin-bottom: 50px;
 	padding: 10px;
 	text-transform: uppercase;
+	align-items: center;
 }
 
 header a {
@@ -13,6 +14,11 @@ header a {
 	padding: 10px;
 	text-decoration: none;
 	color: var(--support-text);
+}
+
+header a.logo svg {
+	width: 28px;
+	height: 28px;
 }
 
 header nav {
