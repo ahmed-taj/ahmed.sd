@@ -20,7 +20,7 @@
 				<img src="/images/me.jpg" alt="{{ .Site.Title }}" />
 			</section>
 			<section class="recent">
-				<h3>Latest</h3>
+				<header class="section">Latest</header>
 				{{ .Scratch.Set "Limit" 3 }} {{ partial "posts.html" . }}
 			</section>
 		</main>

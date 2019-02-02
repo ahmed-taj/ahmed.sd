@@ -59,12 +59,7 @@ div.blog {
 
 div.blog div.listing {
 	flex: 1;
-}
-
-div.blog header {
-	font-size: 16px;
-	margin-bottom: 20px;
-	color: var(--support-text);
+	margin-bottom: 15px;
 }
 
 div.blog aside > ul.tags {
