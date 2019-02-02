@@ -35,7 +35,7 @@ main {
 	padding: 10px 20px;
 }
 
-header.section {
+header[role='heading'] {
 	font-size: 16px;
 	margin-bottom: 25px;
 	color: var(--support-text);

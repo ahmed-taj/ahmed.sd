@@ -5,15 +5,15 @@
 	<body>
 		{{ partial "header.html" . }}
 
-		<main>
+		<main role="main">
 			<div class="blog">
 				<div class="listing">
-					<header class="section">Latest</header>
+					<header role="heading">Latest</header>
 					{{ partial "posts.html" . }}
 				</div>
 
 				<aside>
-					<header class="section">Tags</header>
+					<header role="heading">Tags</header>
 					<ul class="tags">
 						{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
 						{{ with $.Site.GetPage (printf "/tags/%s" $name) }}

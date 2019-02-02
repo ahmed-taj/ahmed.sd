@@ -1,6 +1,6 @@
-<header class="top">
+<header role="banner">
 	<a class="logo" href="/"> {{ partial "logo.html" . }} </a>
-	<nav>
+	<nav role="navigation">
 		{{ $page := . }}
 		{{ range .Site.Menus.main }}
 		<a

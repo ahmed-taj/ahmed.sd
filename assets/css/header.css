@@ -1,4 +1,4 @@
-header.top {
+header[role='banner'] {
 	display: flex;
 	flex-direction: row;
 	max-width: var(--max-width);
@@ -8,39 +8,39 @@ header.top {
 	text-transform: uppercase;
 	align-items: center;
 }
-header.top a {
+header[role='banner'] a {
 	display: block;
 	padding: 10px;
 	text-decoration: none;
 	color: var(--support-text);
 }
-header.top a.logo {
+header[role='banner'] a.logo {
 	width: 48px;
 	height: 48px;
 }
-header.top a.logo svg {
+header[role='banner'] a.logo svg {
 	width: 28px;
 	height: 28px;
 }
-header.top nav {
+header[role='banner'] nav {
 	display: flex;
 	margin-left: 10px;
 	width: 100%;
 	flex-direction: row;
 	justify-content: flex-end;
 }
-header.top nav a:active,
-header.top nav a:hover,
-header.top nav a:focus {
+header[role='banner'] nav a:active,
+header[role='banner'] nav a:hover,
+header[role='banner'] nav a:focus {
 	color: var(--text);
 }
-header.top > span,
-header.top > button {
+header[role='banner'] > span,
+header[role='banner'] > button {
 	display: block;
 	padding: 10px;
 	color: var(--support-text);
 }
-header.top > button {
+header[role='banner'] > button {
 	background: var(--background);
 	border: none;
 	cursor: pointer;

@@ -2,9 +2,9 @@
 	<span>{{ replace .Site.Copyright "{year}" now.Year }}</span>
 </footer>
 
-{{- $mainJS := resources.Get "js/main.js" | minify | fingerprint -}}
+{{ $mainJS := resources.Get "js/main.js" | minify | fingerprint }}
 <script
 	type="text/javascript"
-	src="{{- $mainJS.Permalink -}}"
+	src="{{ $mainJS.Permalink }}"
 	integrity="{{ $mainJS.Data.Integrity }}">
 </script>
