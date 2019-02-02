@@ -39,3 +39,10 @@ article > ul.tags li a {
 	text-decoration: none;
 	color: var(--support-text);
 }
+
+article > ul.tags li a:focus,
+article > ul.tags li a:active,
+article > ul.tags li a:hover {
+	color: var(--text);
+	text-decoration: underline;
+}

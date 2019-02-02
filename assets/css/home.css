@@ -4,6 +4,15 @@ section.profile {
 	margin-bottom: 30px;
 }
 
+section.profile > img {
+	width: 120px;
+	height: 120px;
+	margin: 0 0 0 20px;
+	border-radius: 50%;
+	border: 1px solid var(--support-text);
+	align-self: center;
+}
+
 section.profile .info h1 {
 	margin: 0 0 10px 0;
 	letter-spacing: -0.9px;
@@ -14,17 +23,36 @@ section.profile .info p {
 	line-height: 1.5em;
 }
 
-section.profile img {
-	width: 120px;
-	height: 120px;
-	margin: 0 0 0 20px;
-	border-radius: 50%;
-	border: 1px solid var(--support-text);
-	align-self: center;
+section.profile .info ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 14px;
+}
+
+section.profile .info ul li:not(:first-child) {
+	margin: 0 10px;
+}
+
+section.profile .info ul a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--support-text);
+	padding: 5px 0;
+}
+
+section.profile .info ul a:focus,
+section.profile .info ul a:active,
+section.profile .info ul a:hover {
+	text-decoration: underline;
+	color: var(--text);
 }
 
 section.recent {
-	padding: 40px 0;
+	padding-bottom: 40px;
 }
 
 @media (max-width: 575.98px) {
@@ -40,5 +68,9 @@ section.recent {
 	section.profile .info {
 		order: 2;
 		text-align: center;
+	}
+
+	section.profile .info ul {
+		justify-content: center;
 	}
 }

@@ -11,6 +11,11 @@
 					<h1>{{ .Site.Title }}</h1>
 					<p>I build various stuff using code, silly things mostly. In ❤ with
 						Node.js, and Go, but use other tech too. Open source for fun 😍</p>
+					<ul>
+						{{ range .Site.Params.links }}
+						<li> <a href="{{ .url }}"> {{ .name }} </a> </li>
+						{{ end }}
+					</ul>
 				</div>
 				<img src="/images/me.jpg" alt="{{ .Site.Title }}" />
 			</section>

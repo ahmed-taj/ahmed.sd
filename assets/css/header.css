@@ -16,6 +16,11 @@ header a {
 	color: var(--support-text);
 }
 
+header a.logo {
+	width: 48px;
+	height: 48px;
+}
+
 header a.logo svg {
 	width: 28px;
 	height: 28px;

@@ -36,8 +36,8 @@ params:
       url: https://github.com/z0al
     - name: Twitter
       url: https://twitter.com/_z0al
-    - name: PGP
-      url: /pgp.txt
+    - name: Keybase
+      url: https://keybase.io/z0al
     - name: Email
       url: 'mailto:ah.tajelsir@gmail.com'
 
