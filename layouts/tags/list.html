@@ -6,27 +6,25 @@
 		{{ partial "header.html" . }}
 
 		<main>
-			{{ if eq .Kind "taxonomyTerm" }}
-			<h1>Tags</h1>
-			<ul class="tags__list">
-				{{ range $key, $value := .Data.Terms.ByCount }}
-				{{ $name := .Name }}
-				{{ $count := .Count }}
-				{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-				<li class="tag__item">
-					<a href="{{ .Permalink }}" title="Posts tagged with '{{ $name }}'">
-						{{- $name -}}
-					</a>
-					<span class="count">{{ $count }}</span>
-				</li>
-				{{ end }}
-				{{ end }}
-			</ul>
+			<div class="blog">
+				<div class="listing">
+					<header>Tagged with: {{ .Data.Term }}</header>
+					{{ partial "posts.html" . }}
+				</div>
 
-			{{ else }}
-			<h1>#{{ .Data.Term }}</h1>
-			{{- partial "posts.html" . -}}
-			{{end}}
+				<aside>
+					<header>Tags</header>
+					<ul class="tags">
+						{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+						{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+						<li>
+							<a href="{{ .Permalink }}">{{ $name }}</a>
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul>
+				</aside>
+			</div>
 		</main>
 
 		{{ partial "footer.html" . }}

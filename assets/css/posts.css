@@ -63,7 +63,6 @@ div.blog div.listing {
 
 div.blog header {
 	font-size: 16px;
-	text-transform: uppercase;
 	margin-bottom: 20px;
 	color: var(--support-text);
 }
