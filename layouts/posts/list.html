@@ -6,8 +6,25 @@
 		{{ partial "header.html" . }}
 
 		<main>
-			<h1>Posts</h1>
-			{{ partial "posts.html" . }}
+			<div class="blog">
+				<div class="listing">
+					<header>Latest</header>
+					{{ partial "posts.html" . }}
+				</div>
+
+				<aside>
+					<header>Tags</header>
+					<ul class="tags">
+						{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+						{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+						<li>
+							<a href="{{ .Permalink }}">{{ $name }}</a>
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul>
+				</aside>
+			</div>
 		</main>
 
 		{{ partial "footer.html" . }}

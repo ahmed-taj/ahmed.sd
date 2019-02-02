@@ -2,6 +2,7 @@ ul.posts {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	flex: 1;
 }
 
 article {
@@ -22,7 +23,8 @@ article > a.title {
 	font-size: 18px;
 }
 
-article > ul.tags {
+article > ul.tags,
+aside > ul.tags {
 	display: flex;
 	flex-direction: row;
 	margin: 0;
@@ -42,7 +44,44 @@ article > ul.tags li a {
 
 article > ul.tags li a:focus,
 article > ul.tags li a:active,
-article > ul.tags li a:hover {
+article > ul.tags li a:hover,
+div.blog aside > ul.tags li a:focus,
+div.blog aside > ul.tags li a:active,
+div.blog aside > ul.tags li a:hover {
 	color: var(--text);
 	text-decoration: underline;
+}
+
+div.blog {
+	display: flex;
+	flex-direction: row;
+}
+
+div.blog div.listing {
+	flex: 1;
+}
+
+div.blog header {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: var(--support-text);
+}
+
+div.blog aside > ul.tags {
+	flex-direction: column;
+}
+
+div.blog aside > ul.tags li a {
+	display: inline-block;
+	margin-bottom: 10px;
+	color: var(--text);
+	text-decoration: none;
+	font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+	div.blog {
+		flex-direction: column;
+	}
 }

@@ -9,7 +9,18 @@
 		<article>
 			<time datetime="{{ .Date }}">{{ .Date.Format "Jan 02, 2006" }}</time>
 			<a class="title" href="{{ .URL }}"> {{ .Title }} </a>
-			{{ partial "tags.html" . }}
+			<ul class="tags">
+				{{ range .Params.tags }}
+				{{ $name := . }}
+
+				{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+				<li>
+					<a href="{{ .Permalink }}">{{ $name }}</a>
+				</li>
+				{{ end }}
+
+				{{ end }}
+			</ul>
 		</article>
 	</li>
 	{{ end }}
