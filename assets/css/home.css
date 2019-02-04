@@ -1,29 +1,29 @@
-section.profile {
+div.profile {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	margin-bottom: 30px;
 }
 
-section.profile > img {
+div.profile > img {
 	width: 120px;
 	height: 120px;
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
 	border-radius: 50%;
 	border: 1px solid var(--support-text);
-	align-self: center;
+	align-self: flex-start;
 }
 
-section.profile .info h1 {
+div.profile .bio h1 {
 	margin: 0 0 10px 0;
 	letter-spacing: -0.9px;
 }
 
-section.profile .info p {
+div.profile .bio p {
 	margin: 0 0 15px 0;
 	line-height: 1.5em;
 }
 
-section.profile .info ul {
+div.profile .bio ul {
 	list-style: none;
 	padding: 0;
 	display: flex;
@@ -32,11 +32,11 @@ section.profile .info ul {
 	font-size: 14px;
 }
 
-section.profile .info ul li:not(:first-child) {
-	margin: 0 10px;
+div.profile .bio ul li {
+	margin-right: 15px;
 }
 
-section.profile .info ul a {
+div.profile .bio ul a {
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -44,33 +44,37 @@ section.profile .info ul a {
 	padding: 5px 0;
 }
 
-section.profile .info ul a:focus,
-section.profile .info ul a:active,
-section.profile .info ul a:hover {
+div.profile .bio ul a:focus,
+div.profile .bio ul a:active,
+div.profile .bio ul a:hover {
 	text-decoration: underline;
 	color: var(--text);
 }
 
-section.recent {
+div.recent {
 	margin-bottom: 40px;
 }
 
 @media (max-width: 575.98px) {
-	section.profile {
+	div.profile {
 		flex-direction: column;
 	}
 
-	section.profile img {
-		order: 1;
-		margin: 0 0 20px 0;
+	div.profile img {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
 	}
 
-	section.profile .info {
-		order: 2;
+	div.profile .bio {
+		margin: auto;
+	}
+
+	div.profile .bio h1 {
 		text-align: center;
 	}
 
-	section.profile .info ul {
+	div.profile .bio ul {
 		justify-content: center;
 	}
 }

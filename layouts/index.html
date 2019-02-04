@@ -6,23 +6,24 @@
 		{{ partial "header.html" . }}
 
 		<main>
-			<section class="profile">
-				<div class="info">
+			<div class="profile">
+				<img src="/images/me.jpg" alt="Me wearing a hoodie and think I'm cool!" />
+				<div class="bio">
 					<h1>Ahmed T. Ali</h1>
-					<p>I build various stuff using code, silly things mostly. In ❤ with
-						Node.js, and Go, but use other tech too. Open source for fun 😍</p>
+					<p>A Software Developer who builds various stuff, mostly in JavaScript. He
+						does open source in his free time and write about the things he builds,
+						and adventures he goes through in life.</p>
 					<ul>
 						{{ range .Site.Params.links }}
 						<li> <a href="{{ .url }}"> {{ .name }} </a> </li>
 						{{ end }}
 					</ul>
 				</div>
-				<img src="/images/me.jpg" alt="Me wearing a hoodie and think I'm cool!" />
-			</section>
-			<section class="recent">
-				<header role="heading">Latest</header>
+			</div>
+			<div class="recent">
+				<h1 class="section">Latest</h1>
 				{{ .Scratch.Set "Limit" 3 }} {{ partial "posts.html" . }}
-			</section>
+			</div>
 		</main>
 
 		{{ partial "footer.html" . }}

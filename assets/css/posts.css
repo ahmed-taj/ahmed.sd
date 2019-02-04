@@ -20,7 +20,11 @@ article > a.title {
 	color: var(--text);
 	text-decoration: none;
 	padding: 0.5em 0;
+}
+
+article > a.title h2 {
 	font-size: 18px;
+	margin: 0;
 }
 
 article > ul.tags,

@@ -8,7 +8,7 @@
 	<li>
 		<article>
 			<time datetime="{{ .Date }}">{{ .Date.Format "Jan 02, 2006" }}</time>
-			<a class="title" href="{{ .URL }}"> {{ .Title }} </a>
+			<a class="title" href="{{ .URL }}"> <h2>{{ .Title }}</h2> </a>
 			<ul class="tags">
 				{{ range .Params.tags }}
 				{{ $name := . }}

@@ -8,12 +8,12 @@
 		<main role="main">
 			<div class="blog">
 				<div class="listing">
-					<header role="heading">Latest</header>
+					<h1 class="section">Latest</h1>
 					{{ partial "posts.html" . }}
 				</div>
 
 				<aside>
-					<header role="heading">Tags</header>
+					<h1 class="section">Tags</h1>
 					<ul class="tags">
 						{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
 						{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
