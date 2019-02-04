@@ -52,10 +52,10 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- CSS -->
-	{{ $style := resources.Get "css/index.css" | postCSS | minify | fingerprint }}
-	<link
-		rel="stylesheet"
-		href="{{ $style.Permalink }}"
-		integrity="{{ $style.Data.Integrity }}"
-		/>
+	{{ $style := resources.Get "css/index.css" | postCSS | minify }}
+
+	<style>
+		{{ $style.Content |  safeCSS }}
+	</style>
+
 </head>
