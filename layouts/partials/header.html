@@ -1,5 +1,5 @@
 <header role="banner">
-	<a class="logo" href="/"> {{ partial "logo.html" . }} </a>
+	<a class="logo" href="/" aria-label="Logo"> {{ partial "logo.html" . }} </a>
 	<nav role="navigation">
 		{{ $page := . }}
 		{{ range .Site.Menus.main }}
@@ -11,6 +11,6 @@
 		{{ end }}
 	</nav>
 
-	<span>│</span>
-	<button>☾</button>
+	<span role="presentation">│</span>
+	<button title="Toggle dark theme">☾</button>
 </header>
