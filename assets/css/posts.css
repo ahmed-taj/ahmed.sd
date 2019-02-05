@@ -62,12 +62,13 @@ div.blog {
 }
 
 div.blog div.listing {
-	flex: 1;
-	margin-bottom: 15px;
+	flex-grow: 1;
+	margin-right: 30px;
 }
 
 div.blog aside > ul.tags {
 	flex-direction: column;
+	width: 100px;
 }
 
 div.blog aside > ul.tags li a {
