@@ -16,3 +16,8 @@ HUGO_VERSION = "0.48"
   from = "https://z0al.netlify.com/*"
   to = "https://ahmed.sd/:splat"
   status = 301
+
+[[headers]]
+	for = "/*"
+	[headers.values]
+		Access-Control-Allow-Origin = "*"
