@@ -1,3 +1,7 @@
+/**
+ * Posts list template
+ */
+
 ul.posts {
 	list-style: none;
 	padding: 0;
@@ -83,4 +87,49 @@ div.blog aside > ul.tags li a {
 	div.blog {
 		flex-direction: column;
 	}
+}
+
+/* Post content container */
+
+article section.content {
+	margin-top: 30px;
+	font-size: 18px;
+	max-width: 35em;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	hyphens: auto;
+	text-align: justify;
+}
+
+article .title {
+	line-height: 1;
+}
+
+article .content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+
+/* Post images */
+article img {
+	display: block;
+	padding: 30px 0;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Code snippets */
+
+article pre {
+	padding: 10px;
+	display: block;
+	overflow-x: auto;
+	tab-size: 2;
+	border-radius: 3px;
 }
