@@ -2,6 +2,7 @@
 title: Let's build a GitHub (Pro)bot
 date: 2017-11-12T8:17:32+03:00
 tags: ['github', 'probot', 'webhooks']
+description: A Step-by-Step Guide to Getting Started with Probot framework
 ---
 
 ![Official Probot logo](https://cdn-images-1.medium.com/max/1200/1*E3GYv4MaeXpm7Rfu5f4Bug.png)

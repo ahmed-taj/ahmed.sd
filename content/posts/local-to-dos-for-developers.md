@@ -2,6 +2,7 @@
 title: Local To-Dos for Developers
 date: 2017-12-12T21:17:32+03:00
 tags: ['git', 'to-do', 'github']
+description: My approach to managing local To-dos
 ---
 
 A few days ago I started a small, pet project with a goal of automating the way I manage To-Dos. It’s basically a Command Line Interface (CLI) that helps to create/remove/mark/finish To-Dos.

@@ -8,9 +8,9 @@ pygmentsUseClasses: true
 outputs:
   home:
     - html
+    - rss
   section:
     - html
-    - rss
   taxonomyTerm:
     - html
   taxonomy:
@@ -31,6 +31,7 @@ taxonomies:
   tag: tags
 
 params:
+  name: Ahmed T. Ali
   about: A personal website by Ahmed T. Ali. I write about the things I build,
     and the adventures I go through in life.
   links:
