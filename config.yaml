@@ -1,4 +1,4 @@
-title: Ahmed T. Ali — Software Developer
+title: Ahmed T. Ali
 baseURL: https://ahmed.sd/
 copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
 languageCode: en
@@ -32,8 +32,7 @@ taxonomies:
 
 params:
   name: Ahmed T. Ali
-  about: A personal website by Ahmed T. Ali. I write about the things I build,
-    and the adventures I go through in life.
+  about: A personal website by Ahmed T. Ali. I write the things that I do, and the adventures I go through in life.
   links:
     - name: GitHub
       url: https://github.com/z0al

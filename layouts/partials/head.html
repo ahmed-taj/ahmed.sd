@@ -1,8 +1,5 @@
 <head>
 	{{ $title := printf "%s | %s" .Site.Title .Title }}
-	{{ if eq .Permalink "/" }}
-	{{ $title = .Site.Title }}
-	{{ end }}
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
