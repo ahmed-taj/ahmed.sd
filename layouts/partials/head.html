@@ -1,6 +1,6 @@
 <head>
 	{{ $title := printf "%s | %s" .Site.Title .Title }}
-	{{ if eq .URL "/" }}
+	{{ if eq .Permalink "/" }}
 	{{ $title = .Site.Title }}
 	{{ end }}
 

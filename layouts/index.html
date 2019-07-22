@@ -17,7 +17,7 @@
 						and adventures he goes through in life.</p>
 					<ul>
 						{{ range .Site.Params.links }}
-						<li> <a href="{{ .url }}" rel="me"> {{ .name }} </a> </li>
+						<li> <a href="{{ .Permalink }}" rel="me"> {{ .name }} </a> </li>
 						{{ end }}
 					</ul>
 				</div>
