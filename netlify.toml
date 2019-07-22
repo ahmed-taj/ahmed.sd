@@ -3,14 +3,14 @@ publish = "public"
 command = "hugo"
 
 [context.production.environment]
-HUGO_VERSION = "0.55"
+HUGO_VERSION = "0.55.6"
 HUGO_ENV = "production"
 
 [context.branch-deploy]
 command = "hugo -b https://dev.ahmed.sd"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.55"
+HUGO_VERSION = "0.55.6"
 
 [[redirects]]
   from = "https://z0al.netlify.com/*"
