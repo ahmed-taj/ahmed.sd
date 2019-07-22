@@ -31,7 +31,6 @@ taxonomies:
   tag: tags
 
 params:
-  name: Ahmed T. Ali
   about: A personal website by Ahmed T. Ali. I write the things that I do, and the adventures I go through in life.
   links:
     - name: GitHub
