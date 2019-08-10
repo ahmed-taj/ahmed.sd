@@ -31,7 +31,7 @@ taxonomies:
   tag: tags
 
 params:
-  about: A personal website by Ahmed T. Ali. I write the things that I do, and the adventures I go through in life.
+  about: I write the things that I do, and the adventures I go through in life.
   links:
     - name: GitHub
       url: https://github.com/z0al
