@@ -1,8 +1,0 @@
-<footer>
-	<span>{{ replace .Site.Copyright "{year}" now.Year }}</span>
-</footer>
-
-{{ $bundle := resources.Get "js/app.js" | minify }}
-<script type="text/javascript">
-	{{ $bundle.Content | safeJS }}
-</script>

@@ -1,5 +1,0 @@
----
-title: Tags
-outputs:
-  - html
----

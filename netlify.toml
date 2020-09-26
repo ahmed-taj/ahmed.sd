@@ -1,23 +1,23 @@
 [build]
-publish = "public"
 command = "hugo"
+publish = "public"
 
 [context.production.environment]
-HUGO_VERSION = "0.55.6"
 HUGO_ENV = "production"
+HUGO_VERSION = "0.75.1"
 
 [context.branch-deploy]
 command = "hugo -b https://dev.ahmed.sd"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.55.6"
+HUGO_VERSION = "0.75.1"
 
 [[redirects]]
-  from = "https://z0al.netlify.com/*"
-  to = "https://ahmed.sd/:splat"
-  status = 301
+from = "https://z0al.netlify.com/*"
+status = 301
+to = "https://ahmed.sd/:splat"
 
 [[headers]]
-	for = "/*"
-	[headers.values]
-		Access-Control-Allow-Origin = "*"
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
