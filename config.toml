@@ -4,5 +4,10 @@ title = "Ahmed T. Ali"
 
 defaultContentLanguage = "en"
 
+theme = ["hugo-atom-feed", "hugo-bearblog"]
+
 [permalinks]
 blog = "/:year/:slug/"
+
+[outputs]
+section = ["HTML", "ATOM"]

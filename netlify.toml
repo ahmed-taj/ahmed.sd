@@ -21,3 +21,9 @@ to = "https://ahmed.sd/:splat"
 for = "/*"
 [headers.values]
 Access-Control-Allow-Origin = "*"
+
+[[headers]]
+for = "*.xml"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Content-Type = "application/atom+xml; charset=UTF-8"
