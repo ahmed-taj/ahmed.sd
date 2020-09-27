@@ -1,0 +1,26 @@
+title: Ahmed T. Ali
+baseURL: https://ahmed.sd/
+copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
+
+defaultContentLanguage: en
+
+theme:
+  - hugo-atom-feed
+  - hugo-bearblog
+
+permalinks:
+  blog: blog/:year/:slug/
+
+outputs:
+  section:
+    - HTML
+    - ATOM
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: true
+    style: github
+    tabWidth: 4
