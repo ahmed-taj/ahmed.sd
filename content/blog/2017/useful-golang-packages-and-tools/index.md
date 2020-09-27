@@ -1,7 +1,7 @@
 ---
 title: Useful Golang Packages and Tools
 date: 2017-12-13T21:06:11+03:00
-topics: ["go", "awesome-list"]
+tags: ["go", "awesome-list"]
 description: A list of really awesome Go packages and tools I recently discovered
 ---
 
