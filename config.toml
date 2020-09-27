@@ -7,7 +7,7 @@ defaultContentLanguage = "en"
 theme = ["hugo-atom-feed", "hugo-bearblog"]
 
 [permalinks]
-blog = "/:year/:slug/"
+blog = "blog/:year/:slug/"
 
 [outputs]
 section = ["HTML", "ATOM"]
