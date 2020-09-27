@@ -1,0 +1,29 @@
+<head>
+	{{ $title := printf "%s | %s" .Title .Site.Title }}
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<title>{{ $title }}</title>
+	<link rel="canonical" href="{{ .Permalink }}" />
+	<meta name="description" content="{{ .Site.Params.about }}" />
+
+	<!-- Google Sites -->
+	<meta
+		name="google-site-verification"
+		content="9fdVdFXk7aGvNieJYfoJVbpOoHR5WtOrKnaw0RzCplI"
+	/>
+
+	<!-- Open Graph -->
+	{{- partial "graph.html" (dict "Page" . "Title" $title) -}}
+
+	<!-- Favicon(s) -->
+	{{- partial "favicon.html" . -}}
+
+	<!-- Styles -->
+	{{- partial "styles.html" . -}}
+
+	<!-- Atom feed -->
+	{{- partial "feed.html" . -}}
+</head>

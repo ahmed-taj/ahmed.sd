@@ -6,7 +6,6 @@ defaultContentLanguage: en
 
 theme:
   - hugo-atom-feed
-  - hugo-bearblog
 
 permalinks:
   blog: blog/:year/:slug/
