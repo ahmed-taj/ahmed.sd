@@ -1,0 +1,7 @@
+{{ $tailwind := resources.Get "css/tailwind.css" | postCSS | fingerprint }}
+
+<link
+	rel="stylesheet"
+	href="{{ $tailwind.Permalink }}"
+	integrity="{{ $tailwind.Data.Integrity }}"
+/>
