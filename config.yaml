@@ -16,6 +16,9 @@ outputs:
     - HTML
     - ATOM
 
+disableKinds:
+  - RSS
+
 markup:
   highlight:
     codeFences: true
