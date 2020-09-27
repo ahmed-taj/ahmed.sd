@@ -4,6 +4,7 @@ date: 2017-11-12T09:39:08Z
 tags: [github, probot, webhooks]
 description: A Step-by-Step Guide to Getting Started with Probot framework
 cover_image: ./probot.png
+cover_description: The official Probot logo
 ---
 
 [GitHub Apps](https://developer.github.com/apps) (formerly Integrations) were [launched](https://developer.github.com/changes/2017-05-22-github-apps-production-ship) earlier this year. Apps are first-class citizen in GitHub which means they act on their own behalf, just like a normal GitHub user.
