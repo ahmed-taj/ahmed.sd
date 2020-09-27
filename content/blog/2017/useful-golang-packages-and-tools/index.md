@@ -37,7 +37,7 @@ Run 'hugo --help' for usage.
 
 Do you love Node.js [inquirer package](https://www.npmjs.com/package/inquirer)? if yes, then you will probably love Survey too. While it doesn’t support yet all the features provided by [inquirer](https://www.npmjs.com/package/inquirer), it has all the basic features and very easy to usage.
 
-![](./survey-demo.gif)<figcaption>Survey package in action</figcaption>
+{{< figure src="./survey-demo.gif" caption="Survey package in action"   >}}
 
 ## [Chalk][chalk]
 

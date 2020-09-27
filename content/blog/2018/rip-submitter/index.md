@@ -53,7 +53,7 @@ You can see a live preview of the result here: [https://submit.now.sh/to/z0al/te
 
 For the form inputs, I used [Draft.js](http://draftjs.org/) with some other plugins to make writing Markdown text easier and fun, here is a demo:
 
-![](./demo.gif)<figcaption>How live Markdown editing works, Thanks to Draft.js</figcaption>
+{{< figure src="./demo.gif" caption="How live Markdown editing works, Thanks  to Draft.js"   >}}
 
 Of course when you submit the issue we will convert what you’ve written to pure markdown that GitHub understands, but this part isn’t fully functional yet e.g. for images.
 

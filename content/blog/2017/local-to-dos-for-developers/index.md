@@ -37,13 +37,13 @@ The tool itself doesn’t (yet) help much regarding the prevention of accidental
 
 Adding To-Dos are simple as you might have imagined. For example, here is how to add a To-Do:
 
-![](./adding-todos.png)<figcaption>Adding To-Dos</figcaption>
+{{< figure src="./adding-todos.png" caption="Adding To-Dos" >}}
 
 > **NOTE:** for most commands, you may pass -s or --simple to simplify the process if possible, for add command, the tool simply won’t prompt for “description” field.
 
 Now if you list your To-Dos it may look like this:
 
-![](./list-todos.png)<figcaption>List available To-Do items</figcaption>
+{{< figure src="./list-todos.png" caption="List available To-Do items" >}}
 
 Trivial, huh?
 
@@ -55,7 +55,7 @@ It also worth mentioning that the tool doesn’t (and probably won’t ) support
 
 Marking To-Dos makes it even easier to use the tool, for example, if you want to remove a To-Do item, the command will show a selection list like below to let you select which item to delete:
 
-![](./remove-an-item.png)<figcaption>Selection list to remove an item</figcaption>
+{{< figure src="./remove-an-item.png" caption="Selection list to remove an item" >}}
 
 If you want to remove a marked item you can pass -m to the command to skip selection step. You may only mark single To-Do :)
 
@@ -65,7 +65,7 @@ This is actually a cool thing!
 
 The tool enables you to import issues (typically the title, description and number) from [https://github.com](https://github.com) (Enterprise edition too, at least theoretically) and use them as local To-Do items. The tool is smart enough to filter the result down to only issues in your repository. To determine your repository URL, we read git configurations (remotes to be specific) and extract the repository info from the origin URL. Here is a demo:
 
-![](./import-todos.png)
+{{< figure src="./import-todos.png" caption="Importing To-dos"  >}}
 
 Great! And you may also use an [advanced search syntax](https://help.github.com/articles/searching-issues-and-pull-requests/) such as label:"in progress" 🙌
 
@@ -81,15 +81,14 @@ Just like any To-Do application, we need a way to see your work history, but unl
 
 As you might have guessed, finish command actually commits staged files and removes the To-Do item. Not just that, it also helps you to follow the [Conventional Commits](https://conventionalcommits.org/lang/en) guidelines, take a look:
 
-![](./finishing-a-todo-part-1.png)<figcaption>Finishing a To-Do (part 1)</figcaption>
-
-![](./finishing-a-todo-part-2.png)<figcaption>Finishing a To-Do (part 2)</figcaption>
+{{< figure src="./finishing-a-todo-part-1.png" caption="Finishing a To-Do (Part 1)" >}}
+{{< figure src="./finishing-a-todo-part-2.png" caption="Finishing a To-Do (Part 2)" >}}
 
 The tool automatically sets some defaults values for you and let you modify them if you need. For example, it automatically set the “Short Description” of the commit to the Todo’s title and adds the issue number (if any) to the list of issues to be closed by this action (the commit!)
 
 And here we go, let’s check our history:
 
-![](./git-history.png)<figcaption>Work history ;)</figcaption>
+{{< figure src="./git-history.png" caption="Work history ;)"   >}}
 
 ### A little encouragement while you work
 
