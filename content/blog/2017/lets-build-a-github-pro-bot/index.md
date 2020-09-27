@@ -69,7 +69,7 @@ Before we start, we need to register our app, to do so, Follow the official GitH
 
 **Notes:**
 
-- If you don’t know where your app would live yet, you may consider using the URL of the app repository (i.e. [ahmed-taj/dep](https://github.com/ahmed-taj/dep)) as “ **Homepage URL** ”
+- If you don’t know where your app would live yet, you may consider using the URL of the app repository (i.e. [z0al/dep](https://github.com/z0al/dep)) as “ **Homepage URL** ”
 - For now, you can safely use “https://example.com” as **“Webhook URL”** we will fix this shortly!
 - We will need the following **permissions** for our app to work:
 
@@ -401,7 +401,7 @@ Ran all test suites.
 > **Tip:**
 > The default — CPA generated — npm script runs [**standard**](https://standardjs.com) after Jest tests. To change this behavior change the “test” script in “package.json” file.
 >
-> In my case, I’ve [completely replaced](https://github.com/ahmed-taj/dep/blob/master/package.json) **standard** with [**prettier-standard**](https://github.com/sheerun/prettier-standard) package, but, it’s up to you!
+> In my case, I’ve [completely replaced](https://github.com/z0al/dep/blob/master/package.json) **standard** with [**prettier-standard**](https://github.com/sheerun/prettier-standard) package, but, it’s up to you!
 
 ## Part (2): Check PR status on updates
 
@@ -705,7 +705,7 @@ $now rm --safe --yes "$repo_name"
 - Join Probot [Slack channel](https://probot-slackin.herokuapp.com/).
 - If you need more examples, then you definitely need to check the Probot [Apps list.](https://probot.github.io/apps/)
 
-The full source code is available on [Github](https://github.com/ahmed-taj/dep).
+The full source code is available on [Github](https://github.com/z0al/dep).
 
 Special thanks to [Jason Etcovitch](https://twitter.com/JasonEtco) for taking the time to review the original blog post and provide awesome feedback!
 

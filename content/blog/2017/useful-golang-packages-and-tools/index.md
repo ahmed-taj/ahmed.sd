@@ -6,7 +6,7 @@ description: A list of really awesome Go packages and tools I recently discovere
 cover_image: ./cover.jpeg
 ---
 
-I recently [built my first](https://dev.to/ahmedtaj/local-to-dos-for-developers-5l2) Go language program ever 🙌. In this post I would like to share some Go packages I found very useful.
+I recently [built my first][local-to-dos-for-developers] Go language program ever 🙌. In this post I would like to share some Go packages I found very useful.
 
 So without further ado let’s get started :)
 
@@ -79,3 +79,5 @@ if err != nil {
 3. [My simple Git based To-Dos app written in Go](https://git.io/todos)
 
 I hope you find this post useful. Thank you ;)
+
+[local-to-dos-for-developers]: {{< ref "/blog/2017/local-to-dos-for-developers" >}}

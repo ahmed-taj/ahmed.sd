@@ -96,6 +96,6 @@ Finally, In case you didn’t notice, there are some one-line encouragement mess
 
 ## Wrap up
 
-If you like the tool you can download the binary from the official [GitHub repository](https://github.com/ahmed-taj/git-todos) (you can also use this sweet, short URL [https://git.io/todos](https://git.io/todos))
+If you like the tool you can download the binary from the official [GitHub repository](https://github.com/z0al/git-todos) (you can also use this sweet, short URL [https://git.io/todos](https://git.io/todos))
 
 Feedback is really appreciated ❤

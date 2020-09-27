@@ -22,25 +22,44 @@ While [Auth0](http://auth0.com/) is very great and simple service, it’s just t
 
 Markdown is easy to write but hard to read correctly by tools such as submitter, no yet. Yes, GitHub has a [spec](https://github.github.com/gfm/) for their implementation, but it’s not really stable yet, I personally encountered some spec errors while trying to make a GFM parser.
 
-On the other hand, I think, [YAML](http://yaml.org/) is friendly to both humans and machines. So, here is how a simple submit.yml (would live inside the .github folder) would look like:
+On the other hand, I think, [YAML](http://yaml.org/) is friendly to both humans and machines. So, here is how a simple submit.yml (would live inside the `.github` folder) would look like:
 
-{% gist https://gist.github.com/ahmed-taj/1776291b920441e1fa3d6aaaee026d56 %}
+```yaml
+meta:
+  types:
+    - Feature request
+    - Bug report
+  note: a text from maintainers
+
+form:
+  # Key: field name (rendered as label)
+  # Value: a help text (rendered as input placeholder)
+  Description: Write here
+
+  # The value can also be an object
+  Steps to reproduce:
+    help: help text
+    for: bug report
+
+  What is the expected behavior?:
+    for: bug report
+```
 
 The for attribute indicates that the field should be visible only when the specified type is selected. Types are defined by the meta.types list. A help text can be specified using the help sub-key or directly assigning a string as a value of a field. That’s it, really!
 
-You can see a live preview of the result here: [https://submit.now.sh/to/ahmed-taj/test](https://submit.now.sh/to/ahmed-taj/test) (you need to login using GitHub)
+You can see a live preview of the result here: [https://submit.now.sh/to/z0al/test](https://submit.now.sh/to/z0al/test) (you need to login using GitHub)
 
 #### Draft.js + Markdown = ❤️
 
 For the form inputs, I used [Draft.js](http://draftjs.org/) with some other plugins to make writing Markdown text easier and fun, here is a demo:
 
-![](https://cdn-images-1.medium.com/max/719/1*TeNn2PgYvHv77hLB9BiXDQ.gif)<figcaption>How live Markdown editing works, Thanks to Draft.js</figcaption>
+![](./demo.gif)<figcaption>How live Markdown editing works, Thanks to Draft.js</figcaption>
 
 Of course when you submit the issue we will convert what you’ve written to pure markdown that GitHub understands, but this part isn’t fully functional yet e.g. for images.
 
 > **NOTE:** If a lot of people would love to see a similar editor for GitHub as a browser plugin I would happily give it a shot!
 
-If you’re curious how the final app would look like, it’s live at [https://submit.now.sh](https://submit.now.sh) (pre-alpha!! use at your own risk). The full source code is also available at [GitHub](https://github.com/ahmed-taj/submitter).
+If you’re curious how the final app would look like, it’s live at [https://submit.now.sh](https://submit.now.sh) (pre-alpha!! use at your own risk). The full source code is also available at [GitHub](https://github.com/z0al/submitter).
 
 That’s all for now, thanks for reading!
 

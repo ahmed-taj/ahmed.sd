@@ -139,7 +139,7 @@ I will be using the following technologies/products to implement the project, I 
 - [Now](now.sh) for hosting.
 - And of course [GitHub](https://github.com)!
 
-> **Edited:** The project source code is available in [ahmed-taj/submitter](https://github.com/ahmed-taj/submitter). It only contains initial setup right now!
+> **Edited:** The project source code is available in [z0al/submitter](https://github.com/z0al/submitter). It only contains initial setup right now!
 
 More posts are coming!
 
