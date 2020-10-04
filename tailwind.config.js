@@ -1,6 +1,10 @@
 const isProd = process.env.HUGO_ENVIRONMENT === "production";
 
 module.exports = {
+	dark: "class",
+	experimental: {
+		darkModeVariant: true,
+	},
 	future: {
 		removeDeprecatedGapUtilities: true,
 		purgeLayersByDefault: true,
@@ -13,5 +17,5 @@ module.exports = {
 		extend: {},
 	},
 	variants: {},
-	plugins: [],
+	plugins: [require("@tailwindcss/typography")],
 };

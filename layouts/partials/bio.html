@@ -1,0 +1,14 @@
+<section class="px-2 py-4 flex flex-col sm:flex-row justify-between">
+	<p class="flex flex-grow text-lg sm:ml-8">{{ .Site.Author.bio }}</p>
+
+	<div
+		class="flex flex-shrink-0 mr-auto items-center mt-6 sm:mt-0 sm:order-first"
+	>
+		<img
+			alt="A picture of {{ .Site.Author.name }}"
+			class="block rounded-full sm:rounded-lg object-cover shadow-lg w-16 h-16 sm:w-40 sm:h-40"
+			src="{{ .Site.Author.avatar }}"
+		/>
+		<p class="text-base text-center ml-6 sm:hidden">{{ .Site.Author.name }}</p>
+	</div>
+</section>

@@ -2,10 +2,19 @@ title: Ahmed T. Ali
 baseURL: https://ahmed.sd/
 copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
 
+author:
+  name: Ahmed T. Ali
+  bio: Hey there 👋, I'm a Software Developer. I build various stuff, mostly in
+    JavaScript or Golang. I do open source in my free time and write about the
+    things that I do, and the adventures I go through in life.
+  avatar: /images/avatar.jpg
+
 defaultContentLanguage: en
 
 theme:
   - hugo-atom-feed
+
+enableEmoji: true
 
 permalinks:
   blog: blog/:year/:slug/
@@ -26,3 +35,14 @@ markup:
     noClasses: true
     style: github
     tabWidth: 4
+
+menu:
+  main:
+    - identifier: blog
+      name: Articles
+      url: /blog/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20

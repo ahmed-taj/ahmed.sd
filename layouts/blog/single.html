@@ -1,3 +1,8 @@
 {{ define "main" }}
-<h1>blog/single.html</h1>
+
+<article class="prose prose-md px-2 py-8 w-full max-w-full">
+	<h1 class="mx-auto">{{ .Title }}</h1>
+	<div class="pt-4">{{ .Content }}</div>
+</article>
+
 {{ end }}
