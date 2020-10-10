@@ -18,6 +18,9 @@ module.exports = {
 	purge: {
 		enabled: isProd,
 		content: ["./layouts/**/*.html"],
+		options: {
+			whitelistPatterns: [/color/],
+		},
 	},
 	theme: {
 		typography: {
