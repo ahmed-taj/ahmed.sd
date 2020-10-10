@@ -8,10 +8,24 @@ author:
     JavaScript or Golang. I do open source in my free time and write about the
     things that I do, and the adventures I go through in life.
   avatar: /images/avatar.jpg
-  twitter: https://twitter.com/_z0al
-  github: https://github.com/z0al
-  email: mailto:hello@ahmed.sd
-  feed: /blog/atom.xml
+  social:
+    - name: Email
+      url: mailto:hello@ahmed.sd
+      icon: regular/envelope
+    - name: GitHub
+      url: https://github.com/z0al
+      icon: brands/github
+    - name: Twitter
+      url: https://twitter.com/_z0al
+      icon: brands/twitter
+    - name: Atom feeds
+      url: /blog/atom.xml
+      icon: solid/rss
+
+params:
+  atom:
+    link: /blog/atom.xml
+    limit: 20
 
 defaultContentLanguage: en
 
@@ -23,8 +37,6 @@ enableEmoji: true
 permalinks:
   blog: blog/:year/:slug/
 
-rssLimit: 20
-
 outputs:
   section:
     - HTML
@@ -32,8 +44,6 @@ outputs:
 
 disableKinds:
   - RSS
-  - term
-  - taxonomy
 
 markup:
   highlight:

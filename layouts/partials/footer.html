@@ -1,43 +1,17 @@
 <footer class="flex flex-col sm:flex-row justify-between py-12 px-2">
 	<div class="flex justify-center items-baseline pb-4 sm:pb-0 sm:order-2">
-		<a
-			href="{{ .Site.Author.email }}"
-			class="w-5 h-5 text-gray-500 hover:text-gray-600"
-			target="_blank"
-		>
-			<span class="sr-only">Email</span>
-			{{ partial "fontawesome.html" "regular/envelope" }}
-		</a>
+		{{ range .Site.Author.social }}
 
 		<a
-			href="{{ .Site.Author.twitter }}"
-			class="w-5 h-5 ml-6 text-gray-500 hover:text-gray-600"
-			rel="me"
+			href="{{ .url }}"
+			class="w-5 h-5 mx-3 md:mx-0 md:ml-6 text-gray-500 hover:text-gray-600"
 			target="_blank"
+			title="{{ .name }}"
 		>
-			<span class="sr-only">Twitter</span>
-			{{ partial "fontawesome.html" "brands/twitter" }}
+			{{ partial "fontawesome.html" .icon }}
 		</a>
 
-		<a
-			href="{{ .Site.Author.github }}"
-			class="w-5 h-5 ml-6 text-gray-500 hover:text-gray-600"
-			rel="me"
-			target="_blank"
-		>
-			<span class="sr-only">GitHub</span>
-			{{ partial "fontawesome.html" "brands/github-alt" }}
-		</a>
-
-		<a
-			href="{{ .Site.Author.feed }}"
-			class="w-5 h-5 ml-6 text-gray-500 hover:text-gray-600"
-			rel="me"
-			target="_blank"
-		>
-			<span class="sr-only">Atom feeds</span>
-			{{ partial "fontawesome.html" "solid/rss" }}
-		</a>
+		{{ end }}
 	</div>
 
 	<span class="block text-center sm:text-left">
