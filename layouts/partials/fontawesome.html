@@ -1,0 +1,6 @@
+{{/* Credits: https://www.client9.com/using-font-awesome-icons-in-hugo/ */}}
+{{- $base_dir := "node_modules/@fortawesome/fontawesome-free/svgs/" -}}
+{{- $icon_path :=print $base_dir . ".svg" -}}
+{{- $svgPath :="<path" -}}
+{{- $svgFill :="<path fill=\"currentColor\"" -}}
+{{- replace (readFile $icon_path) $svgPath $svgFill | safeHTML -}}
