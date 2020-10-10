@@ -1,0 +1,33 @@
+{{ $title := .Title }}
+{{ $articles := where .Site.RegularPages "Section" "blog" }}
+
+{{/*  Home Page  */}}
+{{ if .Scratch.Get "Limit" }}
+{{ $articles = first (.Scratch.Get "Limit") $articles }}
+
+{{/*  Tags  */}}
+{{ else if .Data.Term }}
+{{ $title = printf "Tagged with: %s" .Data.Term }}
+{{ $articles = where $articles ".Params.tags" "intersect" (slice .Data.Term)}}
+{{ end }}
+
+<div class="flex flex-col sm:flex-row">
+	<div class="w-full pr-4">
+		<h1 class="text-2xl text-gray-700 px-2 pb-4 pt-8"> {{ $title }}</h1>
+
+		<ul class="flex flex-col">
+			{{ range $articles }}
+			<li>
+				{{ partial "article.html" . }}
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+	<aside class="sm:w-1/4 px-2">
+		<h1 class="text-2xl text-gray-700 pb-4 pt-8">Tags</h1>
+		{{ $site := .Site }} 
+		{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+		{{ partial "tag.html" (dict "Site" $site "Name" $name) }} 
+		{{ end }}
+	</aside>
+</div>

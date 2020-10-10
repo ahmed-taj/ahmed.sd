@@ -11,5 +11,8 @@
 
 <ul class="flex p-2">
 	{{ $site := .Site }}
-	{{ range .Params.tags }} {{ partial "tag.html" (dict "Site" $site "Name" . ) }} {{ end }}
-</ul> {{ end }}
+	{{ range .Params.tags }} 
+	{{ partial "tag.html" (dict "Site" $site "Name" . ) }} 
+	{{ end }}
+</ul> 
+{{ end }}

@@ -1,4 +1,17 @@
-{{ define "main" }} {{ partial "bio.html" . }}
+{{ define "main" }} 
 
-<h1 class="text-2xl text-gray-700 px-2 pb-4 pt-8">Latest</h1>
-{{ .Scratch.Set "Limit" 3 }} {{ partial "articles.html" . }} {{ end }}
+{{ partial "bio.html" . }}
+
+<h1 class="text-2xl text-gray-700 px-2 pb-4 pt-8">Latest Articles</h1>
+
+{{ $articles := first 3 (where .Site.RegularPages "Section" "blog" )}}
+
+<ul class="flex flex-col">
+	{{ range $articles }}
+	<li>
+		{{ partial "article.html" . }}
+	</li>
+	{{ end }}
+</ul>
+
+{{ end }}

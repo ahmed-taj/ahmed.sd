@@ -45,6 +45,9 @@ outputs:
 disableKinds:
   - RSS
 
+taxonomies:
+  tag: tags
+
 markup:
   highlight:
     codeFences: true
