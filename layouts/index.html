@@ -1,1 +1,8 @@
-{{ define "main" }} {{ partial "bio.html" . }} {{ end }}
+{{ define "main" }} 
+
+	{{ partial "bio.html" . }} 
+
+	{{ .Scratch.Set "Limit" 3 }}
+	{{ partial "articles.html" . }}
+
+{{ end }}

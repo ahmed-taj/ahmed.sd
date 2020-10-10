@@ -5,3 +5,11 @@
 	href="{{ $tailwind.Permalink }}"
 	integrity="{{ $tailwind.Data.Integrity }}"
 />
+
+{{ $syntax := resources.Get "css/syntax.css" | postCSS | fingerprint }}
+
+<link
+	rel="stylesheet"
+	href="{{ $syntax.Permalink }}"
+	integrity="{{ $syntax.Data.Integrity }}"
+/>

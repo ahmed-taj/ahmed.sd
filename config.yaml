@@ -35,7 +35,7 @@ markup:
     codeFences: true
     guessSyntax: true
     lineNos: false
-    noClasses: true
+    noClasses: false
     style: github
     tabWidth: 4
 

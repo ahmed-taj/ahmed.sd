@@ -1,5 +1,11 @@
 const isProd = process.env.HUGO_ENVIRONMENT === "production";
 
+// Same as .rounded class
+const borderRadius = "0.25rem";
+
+// From GitHub CSS
+const codeBackground = "#f6f8fa";
+
 module.exports = {
 	dark: "class",
 	experimental: {
@@ -19,7 +25,19 @@ module.exports = {
 				css: {
 					pre: {
 						color: null,
-						backgroundColor: "#f6f8fa !important",
+						backgroundColor: `${codeBackground}  !important`,
+						borderRadius,
+					},
+					blockquote: {
+						fontWeight: null,
+					},
+					figure: {
+						display: "flex",
+						flexDirection: "column",
+						alignItems: "center",
+					},
+					img: {
+						borderRadius,
 					},
 				},
 			},

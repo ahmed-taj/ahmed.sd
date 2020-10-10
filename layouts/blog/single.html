@@ -3,7 +3,7 @@
 <article class="prose prose-md px-2 py-8 w-full max-w-full">
 	<header>
 		<span class="block pb-4">
-			{{ dateFormat "Jan 2, 2006" .Date }} · {{ .ReadingTime }} min read
+			{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read
 		</span>
 		<h1 class="mx-auto">{{ .Title }}</h1>
 	</header>

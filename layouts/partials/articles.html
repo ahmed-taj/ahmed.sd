@@ -1,0 +1,27 @@
+<ul >
+	{{ $articles := where .Site.RegularPages "Section" "blog" }}
+	{{ if .Scratch.Get "Limit" }}
+	{{ $articles = first (.Scratch.Get "Limit") $articles }}
+	{{ end }}
+
+	{{ range $articles }}
+	<li>
+		<article>
+			<time datetime="{{ .Date }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+			<a  href="{{ .Permalink }}"> <h2>{{ .Title }}</h2> </a>
+			<ul>
+				{{ range .Params.tags }}
+				{{ $name := . }}
+
+				{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+				<li>
+					<a href="{{ .Permalink }}">{{ $name }}</a>
+				</li>
+				{{ end }}
+
+				{{ end }}
+			</ul>
+		</article>
+	</li>
+	{{ end }}
+</ul>
