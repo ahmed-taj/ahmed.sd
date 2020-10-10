@@ -2,5 +2,10 @@
 {{- $base_dir := "node_modules/@fortawesome/fontawesome-free/svgs/" -}}
 {{- $icon_path :=print $base_dir . ".svg" -}}
 {{- $svgPath :="<path" -}}
-{{- $svgFill :="<path fill=\"currentColor\"" -}}
-{{- replace (readFile $icon_path) $svgPath $svgFill | safeHTML -}}
+{{- $svgPathReplace :="<path fill=\"currentColor\"" -}}
+{{- $svg := replace (readFile $icon_path) $svgPath $svgPathReplace  -}}
+
+{{- $svgTag :="<svg" -}}
+{{- $svgTagReplace :="<svg class=\"w-full h-full\"" -}}
+{{- $svg = replace $svg $svgTag $svgTagReplace  -}}
+{{- $svg | safeHTML -}}

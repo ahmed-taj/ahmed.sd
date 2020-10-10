@@ -28,6 +28,16 @@
 			<span class="sr-only">GitHub</span>
 			{{ partial "fontawesome.html" "brands/github-alt" }}
 		</a>
+
+		<a
+			href="{{ .Site.Author.feed }}"
+			class="w-5 h-5 ml-6 text-gray-500 hover:text-gray-600"
+			rel="me"
+			target="_blank"
+		>
+			<span class="sr-only">Atom feeds</span>
+			{{ partial "fontawesome.html" "solid/rss" }}
+		</a>
 	</div>
 
 	<span class="block text-center sm:text-left">
