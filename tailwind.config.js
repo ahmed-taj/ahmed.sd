@@ -19,7 +19,7 @@ module.exports = {
 		enabled: isProd,
 		content: ["./layouts/**/*.html"],
 		options: {
-			whitelistPatterns: [/color/],
+			whitelistPatterns: [/bg-\S+-\d+/, /text-\S+-\d+/],
 		},
 	},
 	theme: {
