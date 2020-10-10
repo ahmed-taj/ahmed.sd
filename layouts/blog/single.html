@@ -2,13 +2,14 @@
 
 <article class="prose prose-md px-2 py-8 w-full max-w-full">
 	<header>
-		<span class="block pb-4">
-			{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read
-		</span>
+		<span class="block pb-4"> {{ partial "date.html" . }} </span>
 		<h1 class="mx-auto">{{ .Title }}</h1>
 	</header>
 
 	<div>{{ .Content }}</div>
 </article>
 
-{{ end }}
+<ul class="flex p-2">
+	{{ $site := .Site }}
+	{{ range .Params.tags }} {{ partial "tag.html" (dict "Site" $site "Name" . ) }} {{ end }}
+</ul> {{ end }}

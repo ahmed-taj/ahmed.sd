@@ -711,5 +711,3 @@ The full source code is available on [Github](https://github.com/z0al/dep).
 Special thanks to [Jason Etcovitch](https://twitter.com/JasonEtco) for taking the time to review the original blog post and provide awesome feedback!
 
 Happy coding!
-
----

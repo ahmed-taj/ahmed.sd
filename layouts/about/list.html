@@ -1,5 +1,7 @@
 {{ define "main" }} {{ partial "bio.html" . }}
 
-<div class="prose prose-md px-2 py-8">{{ .Content }}</div>
+<article class="prose prose-md px-2 py-8 w-full max-w-full">
+	{{ .Content }}
+</article>
 
 {{ end }}

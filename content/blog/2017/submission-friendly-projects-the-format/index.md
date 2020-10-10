@@ -16,7 +16,7 @@ The core idea behind the project is to make submitting issues/PRs easier by rend
 
 > **NOTE:** The format should be compatible with GitHub Flavored Markdown [specification](https://github.github.com/gfm/).
 
-#### Task Lists:
+### Task Lists:
 
 You can write task lists in GitHub like this:
 
@@ -79,7 +79,7 @@ Will be rendered as:
 
 However, I'll need a markdown parser that provides the info of what character used as unordered list indicator (i.e. `-` or `*`)? However, all parsers I know don't! For that reason, I may find myself in a situation either to write my own markdown parser or use a different approach for example, ordered task list?
 
-#### Markdown inputs
+### Markdown inputs
 
 Rendering the issue/PR template as HTML makes it necessary to provide a way to insert markdown input. We will use the following pattern:
 
@@ -109,7 +109,7 @@ Read this [guide]() to know how to write a good description.
 (description goes here)
 ```
 
-#### Comments
+### Comments
 
 Issue/PR template authors usually use HTML comments to guide you through the templates. But, because they're comments, they won't be visible when we render the template. A possible solution is to render them as `<blockquote>`s e.g:
 
@@ -123,7 +123,7 @@ Will be rendered to:
 <blockquote>use x instead of y</blockquote>
 ```
 
-#### Show/hide sections
+### Show/hide sections
 
 When using GitHub issues to report different types of issues i.e. bugs, feature requests, questions ..etc you may find there is type-specific information that isn't related to other types, for example, the version number isn't necessary for feature request issues.
 

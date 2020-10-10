@@ -17,6 +17,11 @@ from = "https://z0al.netlify.com/*"
 status = 301
 to = "https://ahmed.sd/:splat"
 
+[[redirects]]
+from = "https://ahmed.sd/tags/"
+status = 301
+to = "https://ahmed.sd/blog"
+
 [[headers]]
 for = "/*"
 [headers.values]

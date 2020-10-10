@@ -1,6 +1,7 @@
 ---
 title: Introducing Glitch Playground
 date: 2017-10-01T12:23:22.000Z
+description:
 tags: [javascript, webpack, webdev]
 cover_image: ./cover.png
 ---
@@ -23,7 +24,7 @@ Internally, the playground is just a set of [webpack](https://webpack.js.org) pl
 
 It works by walking through the current directory contents to determine suitable entry point files for webpack. An entry point file can be:
 
-#### 1. index.[ext]:
+### 1. index.[ext]:
 
 Used to customize the HTML output (it will be transpiled if necessary).
 
@@ -34,7 +35,7 @@ Used to customize the HTML output (it will be transpiled if necessary).
 <div id="root"></div>
 ```
 
-#### 2. app.[ext]:
+### 2. app.[ext]:
 
 Used as start point for your JavaScript (it will be transpiled if necessary) code, you should import all your scripts here.
 
@@ -45,7 +46,7 @@ Used as start point for your JavaScript (it will be transpiled if necessary) cod
 console.log('Hello world');
 ```
 
-#### 3. style.[ext]:
+### 3. style.[ext]:
 
 Used as a start point for your stylesheets (it will be transpiled if necessary). You should import all your other styles here. Otherwise, you need import them in your `app.[ext]` as you would normally do when using webpack.
 

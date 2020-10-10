@@ -1,0 +1,11 @@
+{{ with .Site.GetPage (printf "/tags/%s" .Name ) }}
+
+
+{{ $colorIndex := mod (len .Name ) (len .Site.Data.colors) }}
+{{ $color := index .Site.Data.colors $colorIndex }}
+<a
+	href="{{ .Permalink }}"
+	class="inline-block truncate px-2 py-1 mr-3 my-2 rounded text-sm {{ $color.bg }} {{ $color.text }}"
+	>{{ .Name }}</a
+>
+{{ end }}
