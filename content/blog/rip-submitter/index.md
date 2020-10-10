@@ -63,5 +63,5 @@ If you’re curious how the final app would look like, it’s live at [https://s
 
 That’s all for now, thanks for reading!
 
-[part-1]: {{< ref "/blog/2017/submission-friendly-projects-introduction" >}}
-[part-2]: {{< ref "/blog/2017/submission-friendly-projects-the-format" >}}
+[part-1]: {{< ref "/blog/submission-friendly-projects-introduction" >}}
+[part-2]: {{< ref "/blog/submission-friendly-projects-the-format" >}}

@@ -145,4 +145,4 @@ More posts are coming!
 
 Thank you :)
 
-[part-1]: {{< ref "/blog/2017/submission-friendly-projects-introduction" >}}
+[part-1]: {{< ref "/blog/submission-friendly-projects-introduction" >}}

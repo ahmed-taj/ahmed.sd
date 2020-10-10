@@ -71,7 +71,7 @@ if err != nil {
 
 I hope you find this post useful. Thank you ;)
 
-[local-to-dos-for-developers]: {{< ref "/blog/2017/local-to-dos-for-developers" >}}
+[local-to-dos-for-developers]: {{< ref "/blog/local-to-dos-for-developers" >}}
 
 [goreleaser]: http://github.com/goreleaser/
 [go-gitconfig]: https://github.com/tcnksm/go-gitconfig

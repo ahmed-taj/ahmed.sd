@@ -106,4 +106,4 @@ In the next post, I will show you the first draft of our simple conventional iss
 
 Thank you :)
 
-[part-2]: {{< ref "/blog/2017/submission-friendly-projects-the-format" >}}
+[part-2]: {{< ref "/blog/submission-friendly-projects-the-format" >}}
