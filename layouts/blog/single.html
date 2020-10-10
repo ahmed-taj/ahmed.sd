@@ -1,8 +1,14 @@
 {{ define "main" }}
 
 <article class="prose prose-md px-2 py-8 w-full max-w-full">
-	<h1 class="mx-auto">{{ .Title }}</h1>
-	<div class="pt-4">{{ .Content }}</div>
+	<header>
+		<span class="block pb-4">
+			{{ dateFormat "Jan 2, 2006" .Date }} · {{ .ReadingTime }} min read
+		</span>
+		<h1 class="mx-auto">{{ .Title }}</h1>
+	</header>
+
+	<div>{{ .Content }}</div>
 </article>
 
 {{ end }}

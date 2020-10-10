@@ -14,7 +14,16 @@ module.exports = {
 		content: ["./layouts/**/*.html"],
 	},
 	theme: {
-		extend: {},
+		typography: {
+			default: {
+				css: {
+					pre: {
+						color: null,
+						backgroundColor: "#f6f8fa !important",
+					},
+				},
+			},
+		},
 	},
 	variants: {},
 	plugins: [require("@tailwindcss/typography")],
