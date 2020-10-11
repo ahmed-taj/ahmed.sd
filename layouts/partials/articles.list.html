@@ -7,7 +7,7 @@
 
 {{/*  Tags  */}}
 {{ else if .Data.Term }}
-{{ $title = printf "Tagged with: %s" .Data.Term }}
+{{ $title = printf "Tagged with: “%s”" .Data.Term }}
 {{ $articles = where $articles ".Params.tags" "intersect" (slice .Data.Term)}}
 {{ end }}
 
