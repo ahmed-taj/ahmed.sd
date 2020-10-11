@@ -46,6 +46,6 @@ module.exports = {
 			},
 		},
 	},
-	variants: {},
+	variants: ["responsive", "group-hover", "hover", "focus", "active"],
 	plugins: [require("@tailwindcss/typography")],
 };

@@ -1,0 +1,8 @@
+<h{{ .Level }} class="group" id="{{ .Anchor | safeURL }}">
+	{{ .Text | safeHTML }} 
+	<a class="pl-2 hidden group-hover:inline-block" href="#{{ .Anchor | safeURL }}"> 
+		<span class="inline-block w-4 h-4 text-gray-700">
+			{{ partial "fontawesome.html" "solid/link" }} 
+		</span>
+	</a>
+</h{{ .Level }}>
