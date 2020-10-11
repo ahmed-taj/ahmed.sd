@@ -1,7 +1,7 @@
 <article class="flex flex-col list-none py-3">
+	<span class="px-2 pb-1 text-sm"> {{ partial "date.html" . }} </span>
 	<a  href="{{ .Permalink }}" class="hover:underline"> 
 		<h2 class="font-medium text-gray-800 text-xl px-2">{{ .Title }}</h2> 
 	</a>
-	<span class="px-2 pb-1"> {{ partial "date.html" . }} </span>
 	<p class="p-2 text-base text-gray-800"> {{ .Description }}</p>
 </article>

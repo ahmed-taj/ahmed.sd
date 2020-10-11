@@ -3,7 +3,7 @@
 	{{- partial "head.html" . -}}
 
 	<body class="text-gray-800 antialiased">
-		<div class="container mx-auto px-4 max-w-3xl">
+		<div class="container flex flex-col mx-auto px-4 max-w-3xl min-h-screen overflow-hidden">
 			{{- partial "header.html" . -}}
 
 			<main id="content">{{- block "main" . }}{{- end }}</main>
