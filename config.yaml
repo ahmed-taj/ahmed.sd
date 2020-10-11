@@ -4,9 +4,10 @@ copyright: Copyright © {year} Ahmed T. Ali. All rights reserved.
 
 author:
   name: Ahmed T. Ali
-  bio: Hey there 👋, I'm a Software Developer. I build various stuff, mostly in
-    JavaScript or Golang. I do open source in my free time and write about the
-    things that I do, and the adventures I go through in life.
+  bio:
+    Hey there 👋, I'm a Full-stack Software Developer based in Berlin, Germany.
+    I do open source in my free time and write about the things that I do and
+    the adventures I go through in life.
   avatar: /images/avatar.jpg
   social:
     - name: Email
