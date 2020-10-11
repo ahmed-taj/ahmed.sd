@@ -30,6 +30,7 @@ module.exports = {
 						color: null,
 						backgroundColor: `${codeBackground}  !important`,
 						borderRadius,
+						tabSize: 4,
 					},
 					blockquote: {
 						fontWeight: null,
