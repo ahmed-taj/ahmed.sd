@@ -2,7 +2,7 @@
 title: "RIP “Submitter”"
 date: 2018-01-30T13:32:00Z
 tags: [markdown, github]
-description: GitHub just announced support for multiple issue and pull request templates. It's time to kill Submitter
+description: Killing Submitter in favor of GitHub new multi-template support
 cover_image: ./submitter.png
 ---
 
